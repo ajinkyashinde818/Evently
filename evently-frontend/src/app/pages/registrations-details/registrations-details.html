@@ -1,0 +1,141 @@
+<div class="details-page">
+
+<!-- Back -->
+<a routerLink="/registrations" class="back-link">
+← Back to Events
+</a>
+
+<!-- Header -->
+<div class="page-header">
+<h1>{{ eventTitle }}</h1>
+<p>View and manage all attendee registrations for this event.</p>
+</div>
+
+<!-- Controls -->
+<div class="controls">
+
+
+
+<input
+type="text"
+placeholder="Search by name or email..."
+[(ngModel)]="searchText"
+(input)="applyFilters()"
+class="search"
+>
+
+</div>
+
+<!-- Table -->
+<div class="table-card">
+
+<table *ngIf="filteredAttendees.length > 0">
+
+<thead>
+<tr>
+<th>ATTENDEE</th>
+<th>TICKET</th>
+<th>STATUS</th>
+<th>DOWNLOAD</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr *ngFor="let user of filteredAttendees">
+
+<td>
+<strong>{{ user.name }}</strong>
+<br>
+<span class="email">{{ user.email }}</span>
+</td>
+
+<td>{{ user.ticketId }}</td>
+
+<td>
+<span class="status" [ngClass]="getStatusClass(user.status)">
+{{ user.status }}
+</span>
+</td>
+
+<td>
+<button class="download-btn" (click)="downloadUserTicket(user)">
+  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+    <path d="M12 3v12"></path>
+    <path d="M8 11l4 4 4-4"></path>
+    <rect x="4" y="17" width="16" height="3" rx="1.5"></rect>
+  </svg>
+  Ticket
+</button>
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+<div *ngIf="filteredAttendees.length === 0" class="empty">
+No registrations found.
+</div>
+
+</div>
+
+
+<!-- Registration Modal -->
+
+<div class="modal" *ngIf="showForm">
+
+<div class="modal-card">
+
+<h2>Register Attendee</h2>
+
+<input placeholder="Full Name" [(ngModel)]="formData.name">
+<input placeholder="Email" [(ngModel)]="formData.email">
+<input placeholder="Phone" [(ngModel)]="formData.phone">
+
+<div class="form-actions">
+
+<button class="submit" (click)="registerUser()">
+Register
+</button>
+
+<button class="cancel" (click)="showForm=false">
+Cancel
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- Ticket Preview -->
+
+<div id="ticket" class="ticket-card" *ngIf="generatedTicket">
+
+<h1 class="ticket-title">EVENTLY PASS</h1>
+
+<div class="ticket-info">
+
+<p><b>Event:</b> {{eventTitle}}</p>
+<p><b>Name:</b> {{formData.name}}</p>
+<p><b>Email:</b> {{formData.email}}</p>
+<p><b>Phone:</b> {{formData.phone}}</p>
+<p><b>Ticket ID:</b> {{generatedTicket}}</p>
+
+</div>
+
+<img *ngIf="qrCodeImage" [src]="qrCodeImage" class="qr-big">
+
+<p class="scan-note">
+Scan this QR code at the event check-in desk
+</p>
+
+<button class="download-btn" (click)="downloadTicket()">
+Download Ticket PDF
+</button>
+
+</div>
+</div>

@@ -1,0 +1,15 @@
+2026-02-15 21:20:15 IST LOG:  database system was shut down at 2026-02-15 17:38:15 IST
+2026-02-15 21:25:15 IST LOG:  checkpoint starting: time
+2026-02-15 21:25:15 IST LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.007 s, sync=0.005 s, total=0.030 s; sync files=2, longest=0.003 s, average=0.003 s; distance=0 kB, estimate=0 kB; lsn=0/1D5EFF8, redo lsn=0/1D5EFA0
+2026-02-15 23:09:36 IST LOG:  database system was interrupted; last known up at 2026-02-15 21:25:15 IST
+2026-02-15 23:09:43 IST LOG:  database system was not properly shut down; automatic recovery in progress
+2026-02-15 23:09:43 IST LOG:  redo starts at 0/1D5EFA0
+2026-02-15 23:09:43 IST LOG:  invalid record length at 0/1D5F0A8: expected at least 24, got 0
+2026-02-15 23:09:43 IST LOG:  redo done at 0/1D5F070 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2026-02-15 23:09:43 IST LOG:  checkpoint starting: end-of-recovery immediate wait
+2026-02-15 23:09:43 IST LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.005 s, sync=0.003 s, total=0.053 s; sync files=2, longest=0.002 s, average=0.002 s; distance=0 kB, estimate=0 kB; lsn=0/1D5F0A8, redo lsn=0/1D5F0A8
+2026-02-15 23:48:15 IST ERROR:  canceling statement due to user request
+2026-02-15 23:48:15 IST ERROR:  canceling statement due to user request
+2026-02-15 23:48:15 IST LOG:  shutting down
+2026-02-15 23:48:15 IST LOG:  checkpoint starting: shutdown immediate
+2026-02-15 23:48:15 IST LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.047 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/1D5F158, redo lsn=0/1D5F158

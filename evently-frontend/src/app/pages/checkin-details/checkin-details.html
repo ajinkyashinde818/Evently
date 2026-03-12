@@ -1,0 +1,112 @@
+<div class="checkin-page">
+
+<a routerLink="/checkins" class="back-link">← Back to Events</a>
+
+<h1>Live Event Check-in</h1>
+<p>Currently managing: <strong>{{ eventTitle }}</strong></p>
+
+<div class="top-grid">
+
+<div class="stat-card">
+<h2>{{ checkedInCount }} / {{ attendees.length }}</h2>
+<span>Checked In</span>
+</div>
+
+<div class="stat-card">
+<h2>{{ currentTime }}</h2>
+<span>{{ currentDate }}</span>
+</div>
+
+<div class="status-card">
+
+<strong>Event Status</strong>
+
+<div class="status-line">
+  <span class="inline-icon">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M12 21s-6-5.373-6-10a6 6 0 1112 0c0 4.627-6 10-6 10z"></path>
+      <circle cx="12" cy="11" r="2.5"></circle>
+    </svg>
+  </span>
+  Innovation Lab
+</div>
+<div class="live">
+  <span class="dot"></span>
+  Live Now
+</div>
+
+<div class="status-stats">
+  <span>
+    Attendees: {{ attendees.length }}
+  </span>
+  <span>
+    Checked In: {{ checkedInCount }}
+  </span>
+</div>
+
+<div class="progress-bar">
+<div
+class="progress-fill"
+[style.width.%]="getProgress()">
+</div>
+</div>
+
+</div>
+
+</div>
+
+<div class="attendees-card">
+
+<h3>Attendees ({{ filteredAttendees.length }})</h3>
+
+<input
+type="text"
+[(ngModel)]="searchText"
+(input)="applySearch()"
+placeholder="🔍 Search attendees..."
+>
+
+<div class="attendee-row" *ngFor="let a of filteredAttendees">
+
+<div>
+<strong>{{ a.name }}</strong><br>
+<span>{{ a.email }}</span>
+</div>
+
+<div class="right">
+
+<span class="status" [ngClass]="getStatusClass(a.status)">
+  {{ a.status }}
+</span>
+
+<button
+(click)="openScanner(a)"
+[disabled]="a.status === 'Checked In'">
+Check In
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- CAMERA OVERLAY -->
+
+<div class="scanner-overlay" *ngIf="showScanner">
+
+<div class="scanner-box">
+
+<h2>Scan Ticket QR</h2>
+
+<div id="qr-reader"></div>
+
+<button class="close-btn" (click)="closeScanner()">
+Close Scanner
+</button>
+
+</div>
+
+</div>
+
+</div>

@@ -1,0 +1,135 @@
+{
+  service: 'evently-backend',
+  environment: 'development',
+  version: '1.0.0',
+  event: 'WebSocket server initialized',
+  timestamp: '2026-03-08 01:41:11',
+  cors: {
+    origin: [ 'http://localhost:4200' ],
+    credentials: true,
+    optionsSuccessStatus: 200
+  },
+  transports: [ 'websocket', 'polling' ],
+  level: 'warn',
+  message: 'Security Event'
+}
+{
+  service: 'evently-backend',
+  environment: 'development',
+  version: '1.0.0',
+  event: 'WebSocket server initialized',
+  timestamp: '2026-03-08 01:43:25',
+  cors: {
+    origin: [ 'http://localhost:4200' ],
+    credentials: true,
+    optionsSuccessStatus: 200
+  },
+  transports: [ 'websocket', 'polling' ],
+  level: 'warn',
+  message: 'Security Event'
+}
+{
+  service: 'evently-backend',
+  environment: 'development',
+  version: '1.0.0',
+  event: 'WebSocket server initialized',
+  timestamp: '2026-03-08 01:44:25',
+  cors: {
+    origin: [ 'http://localhost:4200' ],
+    credentials: true,
+    optionsSuccessStatus: 200
+  },
+  transports: [ 'websocket', 'polling' ],
+  level: 'warn',
+  message: 'Security Event'
+}
+{
+  service: 'evently-backend',
+  environment: 'development',
+  version: '1.0.0',
+  event: 'WebSocket server initialized',
+  timestamp: '2026-03-08 01:49:27',
+  cors: {
+    origin: [ 'http://localhost:4200' ],
+    credentials: true,
+    optionsSuccessStatus: 200
+  },
+  transports: [ 'websocket', 'polling' ],
+  level: 'warn',
+  message: 'Security Event'
+}
+{
+  service: 'evently-backend',
+  environment: 'development',
+  version: '1.0.0',
+  event: 'WebSocket server initialized',
+  timestamp: '2026-03-08 01:52:25',
+  cors: {
+    origin: [ 'http://localhost:4200' ],
+    credentials: true,
+    optionsSuccessStatus: 200
+  },
+  transports: [ 'websocket', 'polling' ],
+  level: 'warn',
+  message: 'Security Event'
+}
+{
+  service: 'evently-backend',
+  environment: 'development',
+  version: '1.0.0',
+  event: 'WebSocket server initialized',
+  timestamp: '2026-03-08 01:53:03',
+  cors: {
+    origin: [ 'http://localhost:4200' ],
+    credentials: true,
+    optionsSuccessStatus: 200
+  },
+  transports: [ 'websocket', 'polling' ],
+  level: 'warn',
+  message: 'Security Event'
+}
+{
+  service: 'evently-backend',
+  environment: 'development',
+  version: '1.0.0',
+  method: 'GET',
+  url: '/api/dashboard',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0',
+  statusCode: 200,
+  responseTime: '98ms',
+  userId: null,
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2026-03-08 01:54:20'
+}
+{
+  service: 'evently-backend',
+  environment: 'development',
+  version: '1.0.0',
+  method: 'GET',
+  url: '/api/dashboard',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0',
+  statusCode: 200,
+  responseTime: '6ms',
+  userId: null,
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2026-03-08 01:54:44'
+}
+{
+  service: 'evently-backend',
+  environment: 'development',
+  version: '1.0.0',
+  method: 'GET',
+  url: '/api/dashboard',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0',
+  statusCode: 200,
+  responseTime: '6ms',
+  userId: null,
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2026-03-08 01:54:58'
+}

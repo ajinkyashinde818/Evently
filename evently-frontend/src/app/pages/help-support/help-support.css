@@ -1,0 +1,144 @@
+/* Apply safe sizing everywhere */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.help-page {
+  padding: 24px;
+  background: linear-gradient(135deg, #f3ede6, #e8e7ed);
+  min-height: 99vh;
+  animation: fadeIn 0.3s ease;
+  margin-left: 3%;
+}
+
+h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #0f172a;
+}
+
+p {
+  color: #7a4b2e;
+  margin-bottom: 18px;
+}
+
+/* Search */
+.search-bar {
+  background: white;
+  border-radius: 10px;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 18px 0 24px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.06);
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 14px;
+}
+
+/* Grid */
+.help-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 18px;
+}
+
+/* FAQ */
+.faq-section h2 {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.faq-card {
+  background: white;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 14px rgba(122,75,46,0.12);
+}
+
+.faq-header {
+  background: #9c93bc;
+  color: rgb(0, 0, 0);
+  padding: 10px 14px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.faq-body {
+  padding: 12px 14px;
+}
+
+.faq-item {
+  margin-bottom: 10px;
+}
+
+.faq-item strong {
+  font-size: 14px;
+  color: #0f172a;
+}
+
+.faq-item p {
+  font-size: 13px;
+  color: #475569;
+}
+
+/* Support */
+.support-section {
+  background: white;
+  border-radius: 12px;
+  padding: 14px;
+  box-shadow: 0 6px 14px rgba(122,75,46,0.12);
+}
+
+.support-section h3 {
+  margin-top: 0;
+  color: #0f172a;
+}
+
+.support-section input,
+.support-section textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 9px;
+  border-radius: 8px;
+  border: 1px solid rgba(122,75,46,0.2);
+  background: #f8f5f0;
+  display: block;
+}
+
+.support-section textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.support-section button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #7e6abe;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.support-section button:hover {
+  background: #6a57a5;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}

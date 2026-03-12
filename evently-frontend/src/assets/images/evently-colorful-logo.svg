@@ -1,0 +1,59 @@
+<svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gradient Definitions -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#764ba2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f093fb;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="calendarGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4facfe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="headerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fa709a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fee140;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="ringGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#30cfd0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#330867;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background Circle with Gradient -->
+  <circle cx="25" cy="25" r="24" fill="url(#bgGradient)" stroke="#ffffff" stroke-width="2" opacity="0.9"/>
+  
+  <!-- Calendar Base -->
+  <rect x="11" y="13" width="28" height="24" rx="3" ry="3" fill="#ffffff" stroke="url(#calendarGradient)" stroke-width="2"/>
+  
+  <!-- Calendar Header -->
+  <rect x="11" y="13" width="28" height="7" rx="3" ry="3" fill="url(#headerGradient)"/>
+  
+  <!-- Calendar Rings -->
+  <rect x="17" y="10" width="4" height="7" rx="2" fill="url(#ringGradient)"/>
+  <rect x="29" y="10" width="4" height="7" rx="2" fill="url(#ringGradient)"/>
+  
+  <!-- Event Dots with Different Colors -->
+  <circle cx="17" cy="26" r="2" fill="#ff6b6b"/>
+  <circle cx="25" cy="26" r="2" fill="#4ecdc4"/>
+  <circle cx="33" cy="26" r="2" fill="#45b7d1"/>
+  
+  <circle cx="17" cy="32" r="2" fill="#f7b731"/>
+  <circle cx="25" cy="32" r="2" fill="#5f27cd"/>
+  <circle cx="33" cy="32" r="2" fill="#00d2d3"/>
+  
+  <!-- Decorative Elements -->
+  <circle cx="15" cy="15" r="1.5" fill="#ffffff" opacity="0.8"/>
+  <circle cx="35" cy="15" r="1.5" fill="#ffffff" opacity="0.8"/>
+  <circle cx="15" cy="35" r="1.5" fill="#ffffff" opacity="0.8"/>
+  <circle cx="35" cy="35" r="1.5" fill="#ffffff" opacity="0.8"/>
+  
+  <!-- Sparkle Effects -->
+  <path d="M8 8 L10 6 L8 4 L6 6 Z" fill="#ffffff" opacity="0.6"/>
+  <path d="M42 8 L44 6 L42 4 L40 6 Z" fill="#ffffff" opacity="0.6"/>
+  <path d="M8 42 L10 40 L8 38 L6 40 Z" fill="#ffffff" opacity="0.6"/>
+  <path d="M42 42 L44 40 L42 38 L40 40 Z" fill="#ffffff" opacity="0.6"/>
+</svg>

@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+/* 🌙 Dark Theme */
+.dark-theme {
+  background: #0f172a;
+  color: white;
+}
+
+.dark-theme .settings-card,
+.dark-theme .card {
+  background: #1e293b;
+  color: white;
+}
+
+.dark-theme input,
+.dark-theme select,
+.dark-theme textarea {
+  background: #0f172a;
+  color: white;
+  border-color: #334155;
+}

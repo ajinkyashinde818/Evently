@@ -1,0 +1,3 @@
+2026-03-03 23:14:52 IST LOG:  database system was shut down at 2026-03-03 23:14:14 IST
+2026-03-03 23:19:52 IST LOG:  checkpoint starting: time
+2026-03-03 23:19:52 IST LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.005 s, sync=0.003 s, total=0.036 s; sync files=2, longest=0.002 s, average=0.002 s; distance=0 kB, estimate=0 kB; lsn=0/1D60BE8, redo lsn=0/1D60B90

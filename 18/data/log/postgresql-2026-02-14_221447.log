@@ -1,0 +1,4 @@
+2026-02-14 22:14:47 IST LOG:  database system was shut down at 2026-02-14 22:00:26 IST
+2026-02-14 22:16:57 IST LOG:  shutting down
+2026-02-14 22:16:57 IST LOG:  checkpoint starting: shutdown immediate
+2026-02-14 22:16:57 IST LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.001 s, total=0.026 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/1844D08, redo lsn=0/1844D08

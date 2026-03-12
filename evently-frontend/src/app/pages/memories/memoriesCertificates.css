@@ -1,0 +1,59 @@
+.certificates-page{
+padding:30px;
+}
+
+.page-header h1{
+font-size:28px;
+margin-bottom:5px;
+}
+
+.page-header p{
+color:#777;
+}
+
+.cert-list{
+margin-top:30px;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.cert-card{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#fff;
+padding:15px 20px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.08);
+}
+
+.cert-name{
+font-weight:500;
+}
+
+.actions button{
+margin-left:10px;
+padding:8px 14px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+background:#4cafef;
+color:white;
+}
+
+.actions button:hover{
+background:#3a9de0;
+}
+
+.loading{
+margin-top:40px;
+text-align:center;
+font-size:18px;
+}
+
+.empty-state{
+margin-top:40px;
+text-align:center;
+color:#888;
+}

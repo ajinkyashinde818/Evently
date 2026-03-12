@@ -1,0 +1,3502 @@
+{
+  error: PathError [TypeError]: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info
+      at name (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:96:19)
+      at parse (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:113:68)
+      at pathToRegexp (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:267:58)
+      at Object.match (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:237:30)
+      at matcher (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\lib\layer.js:86:23)
+      at new Layer (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\lib\layer.js:93:62)
+      at Function.use (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\index.js:398:19)
+      at Function.<anonymous> (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\express\lib\application.js:222:21)
+      at Array.forEach (<anonymous>)
+      at Function.use (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\express\lib\application.js:219:7) {
+    originalPath: '*'
+  },
+  level: 'error',
+  message: 'uncaughtException: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    'TypeError: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    '    at name (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:96:19)\n' +
+    '    at parse (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:113:68)\n' +
+    '    at pathToRegexp (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:267:58)\n' +
+    '    at Object.match (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:237:30)\n' +
+    '    at matcher (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:86:23)\n' +
+    '    at new Layer (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:93:62)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js:398:19)\n' +
+    '    at Function.<anonymous> (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:222:21)\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:219:7)',
+  stack: 'TypeError: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    '    at name (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:96:19)\n' +
+    '    at parse (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:113:68)\n' +
+    '    at pathToRegexp (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:267:58)\n' +
+    '    at Object.match (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:237:30)\n' +
+    '    at matcher (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:86:23)\n' +
+    '    at new Layer (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:93:62)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js:398:19)\n' +
+    '    at Function.<anonymous> (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:222:21)\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:219:7)',
+  exception: true,
+  date: 'Sun Mar 08 2026 01:34:27 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 18992,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v22.18.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 94093312,
+      heapTotal: 39370752,
+      heapUsed: 29088880,
+      external: 2947954,
+      arrayBuffers: 431485
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 4424.968 },
+  trace: [
+    {
+      column: 19,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'name',
+      line: 96,
+      method: null,
+      native: false
+    },
+    {
+      column: 68,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'parse',
+      line: 113,
+      method: null,
+      native: false
+    },
+    {
+      column: 58,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'pathToRegexp',
+      line: 267,
+      method: null,
+      native: false
+    },
+    {
+      column: 30,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'Object.match',
+      line: 237,
+      method: 'match',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js',
+      function: 'matcher',
+      line: 86,
+      method: null,
+      native: false
+    },
+    {
+      column: 62,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js',
+      function: 'new Layer',
+      line: 93,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js',
+      function: 'Function.use',
+      line: 398,
+      method: 'use',
+      native: false
+    },
+    {
+      column: 21,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js',
+      function: null,
+      line: 222,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'Array.forEach',
+      line: null,
+      method: 'forEach',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js',
+      function: 'Function.use',
+      line: 219,
+      method: 'use',
+      native: false
+    }
+  ],
+  service: 'evently-backend',
+  environment: 'development',
+  version: '1.0.0',
+  timestamp: '2026-03-08 01:34:27'
+}
+{
+  error: PathError [TypeError]: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info
+      at name (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:96:19)
+      at parse (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:113:68)
+      at pathToRegexp (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:267:58)
+      at Object.match (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:237:30)
+      at matcher (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\lib\layer.js:86:23)
+      at new Layer (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\lib\layer.js:93:62)
+      at Function.use (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\index.js:398:19)
+      at Function.<anonymous> (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\express\lib\application.js:222:21)
+      at Array.forEach (<anonymous>)
+      at Function.use (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\express\lib\application.js:219:7) {
+    originalPath: '*'
+  },
+  level: 'error',
+  message: 'uncaughtException: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    'TypeError: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    '    at name (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:96:19)\n' +
+    '    at parse (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:113:68)\n' +
+    '    at pathToRegexp (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:267:58)\n' +
+    '    at Object.match (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:237:30)\n' +
+    '    at matcher (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:86:23)\n' +
+    '    at new Layer (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:93:62)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js:398:19)\n' +
+    '    at Function.<anonymous> (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:222:21)\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:219:7)',
+  stack: 'TypeError: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    '    at name (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:96:19)\n' +
+    '    at parse (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:113:68)\n' +
+    '    at pathToRegexp (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:267:58)\n' +
+    '    at Object.match (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:237:30)\n' +
+    '    at matcher (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:86:23)\n' +
+    '    at new Layer (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:93:62)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js:398:19)\n' +
+    '    at Function.<anonymous> (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:222:21)\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:219:7)',
+  exception: true,
+  date: 'Sun Mar 08 2026 01:34:27 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 30236,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v22.18.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 93917184,
+      heapTotal: 39370752,
+      heapUsed: 29060520,
+      external: 2947954,
+      arrayBuffers: 431485
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 4424.984 },
+  trace: [
+    {
+      column: 19,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'name',
+      line: 96,
+      method: null,
+      native: false
+    },
+    {
+      column: 68,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'parse',
+      line: 113,
+      method: null,
+      native: false
+    },
+    {
+      column: 58,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'pathToRegexp',
+      line: 267,
+      method: null,
+      native: false
+    },
+    {
+      column: 30,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'Object.match',
+      line: 237,
+      method: 'match',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js',
+      function: 'matcher',
+      line: 86,
+      method: null,
+      native: false
+    },
+    {
+      column: 62,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js',
+      function: 'new Layer',
+      line: 93,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js',
+      function: 'Function.use',
+      line: 398,
+      method: 'use',
+      native: false
+    },
+    {
+      column: 21,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js',
+      function: null,
+      line: 222,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'Array.forEach',
+      line: null,
+      method: 'forEach',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js',
+      function: 'Function.use',
+      line: 219,
+      method: 'use',
+      native: false
+    }
+  ],
+  service: 'evently-backend',
+  environment: 'development',
+  version: '1.0.0',
+  timestamp: '2026-03-08 01:34:27'
+}
+{
+  error: PathError [TypeError]: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info
+      at name (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:96:19)
+      at parse (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:113:68)
+      at pathToRegexp (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:267:58)
+      at Object.match (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:237:30)
+      at matcher (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\lib\layer.js:86:23)
+      at new Layer (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\lib\layer.js:93:62)
+      at Function.use (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\index.js:398:19)
+      at Function.<anonymous> (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\express\lib\application.js:222:21)
+      at Array.forEach (<anonymous>)
+      at Function.use (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\express\lib\application.js:219:7) {
+    originalPath: '*'
+  },
+  level: 'error',
+  message: 'uncaughtException: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    'TypeError: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    '    at name (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:96:19)\n' +
+    '    at parse (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:113:68)\n' +
+    '    at pathToRegexp (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:267:58)\n' +
+    '    at Object.match (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:237:30)\n' +
+    '    at matcher (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:86:23)\n' +
+    '    at new Layer (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:93:62)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js:398:19)\n' +
+    '    at Function.<anonymous> (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:222:21)\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:219:7)',
+  stack: 'TypeError: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    '    at name (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:96:19)\n' +
+    '    at parse (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:113:68)\n' +
+    '    at pathToRegexp (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:267:58)\n' +
+    '    at Object.match (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:237:30)\n' +
+    '    at matcher (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:86:23)\n' +
+    '    at new Layer (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:93:62)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js:398:19)\n' +
+    '    at Function.<anonymous> (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:222:21)\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:219:7)',
+  exception: true,
+  date: 'Sun Mar 08 2026 01:34:36 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 25296,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v22.18.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 94318592,
+      heapTotal: 39632896,
+      heapUsed: 29093992,
+      external: 2947954,
+      arrayBuffers: 431485
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 4433.875 },
+  trace: [
+    {
+      column: 19,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'name',
+      line: 96,
+      method: null,
+      native: false
+    },
+    {
+      column: 68,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'parse',
+      line: 113,
+      method: null,
+      native: false
+    },
+    {
+      column: 58,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'pathToRegexp',
+      line: 267,
+      method: null,
+      native: false
+    },
+    {
+      column: 30,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'Object.match',
+      line: 237,
+      method: 'match',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js',
+      function: 'matcher',
+      line: 86,
+      method: null,
+      native: false
+    },
+    {
+      column: 62,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js',
+      function: 'new Layer',
+      line: 93,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js',
+      function: 'Function.use',
+      line: 398,
+      method: 'use',
+      native: false
+    },
+    {
+      column: 21,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js',
+      function: null,
+      line: 222,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'Array.forEach',
+      line: null,
+      method: 'forEach',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js',
+      function: 'Function.use',
+      line: 219,
+      method: 'use',
+      native: false
+    }
+  ],
+  service: 'evently-backend',
+  environment: 'development',
+  version: '1.0.0',
+  timestamp: '2026-03-08 01:34:36'
+}
+{
+  error: PathError [TypeError]: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info
+      at name (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:96:19)
+      at parse (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:113:68)
+      at pathToRegexp (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:267:58)
+      at Object.match (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:237:30)
+      at matcher (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\lib\layer.js:86:23)
+      at new Layer (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\lib\layer.js:93:62)
+      at Function.use (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\index.js:398:19)
+      at Function.<anonymous> (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\express\lib\application.js:222:21)
+      at Array.forEach (<anonymous>)
+      at Function.use (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\express\lib\application.js:219:7) {
+    originalPath: '*'
+  },
+  level: 'error',
+  message: 'uncaughtException: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    'TypeError: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    '    at name (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:96:19)\n' +
+    '    at parse (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:113:68)\n' +
+    '    at pathToRegexp (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:267:58)\n' +
+    '    at Object.match (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:237:30)\n' +
+    '    at matcher (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:86:23)\n' +
+    '    at new Layer (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:93:62)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js:398:19)\n' +
+    '    at Function.<anonymous> (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:222:21)\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:219:7)',
+  stack: 'TypeError: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    '    at name (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:96:19)\n' +
+    '    at parse (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:113:68)\n' +
+    '    at pathToRegexp (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:267:58)\n' +
+    '    at Object.match (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:237:30)\n' +
+    '    at matcher (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:86:23)\n' +
+    '    at new Layer (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:93:62)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js:398:19)\n' +
+    '    at Function.<anonymous> (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:222:21)\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:219:7)',
+  exception: true,
+  date: 'Sun Mar 08 2026 01:34:36 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 4944,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v22.18.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 94453760,
+      heapTotal: 39632896,
+      heapUsed: 29094312,
+      external: 2947954,
+      arrayBuffers: 431485
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 4433.875 },
+  trace: [
+    {
+      column: 19,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'name',
+      line: 96,
+      method: null,
+      native: false
+    },
+    {
+      column: 68,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'parse',
+      line: 113,
+      method: null,
+      native: false
+    },
+    {
+      column: 58,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'pathToRegexp',
+      line: 267,
+      method: null,
+      native: false
+    },
+    {
+      column: 30,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'Object.match',
+      line: 237,
+      method: 'match',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js',
+      function: 'matcher',
+      line: 86,
+      method: null,
+      native: false
+    },
+    {
+      column: 62,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js',
+      function: 'new Layer',
+      line: 93,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js',
+      function: 'Function.use',
+      line: 398,
+      method: 'use',
+      native: false
+    },
+    {
+      column: 21,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js',
+      function: null,
+      line: 222,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'Array.forEach',
+      line: null,
+      method: 'forEach',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js',
+      function: 'Function.use',
+      line: 219,
+      method: 'use',
+      native: false
+    }
+  ],
+  service: 'evently-backend',
+  environment: 'development',
+  version: '1.0.0',
+  timestamp: '2026-03-08 01:34:36'
+}
+{
+  error: PathError [TypeError]: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info
+      at name (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:96:19)
+      at parse (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:113:68)
+      at pathToRegexp (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:267:58)
+      at Object.match (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:237:30)
+      at matcher (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\lib\layer.js:86:23)
+      at new Layer (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\lib\layer.js:93:62)
+      at Function.use (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\index.js:398:19)
+      at Function.<anonymous> (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\express\lib\application.js:222:21)
+      at Array.forEach (<anonymous>)
+      at Function.use (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\express\lib\application.js:219:7) {
+    originalPath: '*'
+  },
+  level: 'error',
+  message: 'uncaughtException: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    'TypeError: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    '    at name (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:96:19)\n' +
+    '    at parse (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:113:68)\n' +
+    '    at pathToRegexp (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:267:58)\n' +
+    '    at Object.match (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:237:30)\n' +
+    '    at matcher (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:86:23)\n' +
+    '    at new Layer (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:93:62)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js:398:19)\n' +
+    '    at Function.<anonymous> (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:222:21)\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:219:7)',
+  stack: 'TypeError: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    '    at name (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:96:19)\n' +
+    '    at parse (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:113:68)\n' +
+    '    at pathToRegexp (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:267:58)\n' +
+    '    at Object.match (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:237:30)\n' +
+    '    at matcher (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:86:23)\n' +
+    '    at new Layer (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:93:62)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js:398:19)\n' +
+    '    at Function.<anonymous> (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:222:21)\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:219:7)',
+  exception: true,
+  date: 'Sun Mar 08 2026 01:34:42 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 1264,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v22.18.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 94453760,
+      heapTotal: 39632896,
+      heapUsed: 29137528,
+      external: 2947954,
+      arrayBuffers: 431485
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 4440.468 },
+  trace: [
+    {
+      column: 19,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'name',
+      line: 96,
+      method: null,
+      native: false
+    },
+    {
+      column: 68,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'parse',
+      line: 113,
+      method: null,
+      native: false
+    },
+    {
+      column: 58,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'pathToRegexp',
+      line: 267,
+      method: null,
+      native: false
+    },
+    {
+      column: 30,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'Object.match',
+      line: 237,
+      method: 'match',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js',
+      function: 'matcher',
+      line: 86,
+      method: null,
+      native: false
+    },
+    {
+      column: 62,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js',
+      function: 'new Layer',
+      line: 93,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js',
+      function: 'Function.use',
+      line: 398,
+      method: 'use',
+      native: false
+    },
+    {
+      column: 21,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js',
+      function: null,
+      line: 222,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'Array.forEach',
+      line: null,
+      method: 'forEach',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js',
+      function: 'Function.use',
+      line: 219,
+      method: 'use',
+      native: false
+    }
+  ],
+  service: 'evently-backend',
+  environment: 'development',
+  version: '1.0.0',
+  timestamp: '2026-03-08 01:34:42'
+}
+{
+  error: PathError [TypeError]: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info
+      at name (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:96:19)
+      at parse (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:113:68)
+      at pathToRegexp (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:267:58)
+      at Object.match (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:237:30)
+      at matcher (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\lib\layer.js:86:23)
+      at new Layer (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\lib\layer.js:93:62)
+      at Function.use (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\index.js:398:19)
+      at Function.<anonymous> (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\express\lib\application.js:222:21)
+      at Array.forEach (<anonymous>)
+      at Function.use (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\express\lib\application.js:219:7) {
+    originalPath: '*'
+  },
+  level: 'error',
+  message: 'uncaughtException: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    'TypeError: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    '    at name (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:96:19)\n' +
+    '    at parse (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:113:68)\n' +
+    '    at pathToRegexp (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:267:58)\n' +
+    '    at Object.match (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:237:30)\n' +
+    '    at matcher (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:86:23)\n' +
+    '    at new Layer (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:93:62)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js:398:19)\n' +
+    '    at Function.<anonymous> (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:222:21)\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:219:7)',
+  stack: 'TypeError: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    '    at name (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:96:19)\n' +
+    '    at parse (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:113:68)\n' +
+    '    at pathToRegexp (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:267:58)\n' +
+    '    at Object.match (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:237:30)\n' +
+    '    at matcher (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:86:23)\n' +
+    '    at new Layer (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:93:62)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js:398:19)\n' +
+    '    at Function.<anonymous> (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:222:21)\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:219:7)',
+  exception: true,
+  date: 'Sun Mar 08 2026 01:34:42 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 12668,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v22.18.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 94134272,
+      heapTotal: 39370752,
+      heapUsed: 29133656,
+      external: 2947954,
+      arrayBuffers: 431485
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 4440.468 },
+  trace: [
+    {
+      column: 19,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'name',
+      line: 96,
+      method: null,
+      native: false
+    },
+    {
+      column: 68,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'parse',
+      line: 113,
+      method: null,
+      native: false
+    },
+    {
+      column: 58,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'pathToRegexp',
+      line: 267,
+      method: null,
+      native: false
+    },
+    {
+      column: 30,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'Object.match',
+      line: 237,
+      method: 'match',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js',
+      function: 'matcher',
+      line: 86,
+      method: null,
+      native: false
+    },
+    {
+      column: 62,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js',
+      function: 'new Layer',
+      line: 93,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js',
+      function: 'Function.use',
+      line: 398,
+      method: 'use',
+      native: false
+    },
+    {
+      column: 21,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js',
+      function: null,
+      line: 222,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'Array.forEach',
+      line: null,
+      method: 'forEach',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js',
+      function: 'Function.use',
+      line: 219,
+      method: 'use',
+      native: false
+    }
+  ],
+  service: 'evently-backend',
+  environment: 'development',
+  version: '1.0.0',
+  timestamp: '2026-03-08 01:34:42'
+}
+{
+  error: PathError [TypeError]: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info
+      at name (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:96:19)
+      at parse (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:113:68)
+      at pathToRegexp (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:267:58)
+      at Object.match (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:237:30)
+      at matcher (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\lib\layer.js:86:23)
+      at new Layer (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\lib\layer.js:93:62)
+      at Function.use (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\index.js:398:19)
+      at Function.<anonymous> (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\express\lib\application.js:222:21)
+      at Array.forEach (<anonymous>)
+      at Function.use (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\express\lib\application.js:219:7) {
+    originalPath: '*'
+  },
+  level: 'error',
+  message: 'uncaughtException: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    'TypeError: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    '    at name (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:96:19)\n' +
+    '    at parse (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:113:68)\n' +
+    '    at pathToRegexp (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:267:58)\n' +
+    '    at Object.match (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:237:30)\n' +
+    '    at matcher (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:86:23)\n' +
+    '    at new Layer (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:93:62)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js:398:19)\n' +
+    '    at Function.<anonymous> (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:222:21)\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:219:7)',
+  stack: 'TypeError: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    '    at name (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:96:19)\n' +
+    '    at parse (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:113:68)\n' +
+    '    at pathToRegexp (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:267:58)\n' +
+    '    at Object.match (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:237:30)\n' +
+    '    at matcher (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:86:23)\n' +
+    '    at new Layer (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:93:62)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js:398:19)\n' +
+    '    at Function.<anonymous> (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:222:21)\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:219:7)',
+  exception: true,
+  date: 'Sun Mar 08 2026 01:35:25 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 30780,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v22.18.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 93798400,
+      heapTotal: 39632896,
+      heapUsed: 28462952,
+      external: 2947954,
+      arrayBuffers: 431485
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 4483.593 },
+  trace: [
+    {
+      column: 19,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'name',
+      line: 96,
+      method: null,
+      native: false
+    },
+    {
+      column: 68,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'parse',
+      line: 113,
+      method: null,
+      native: false
+    },
+    {
+      column: 58,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'pathToRegexp',
+      line: 267,
+      method: null,
+      native: false
+    },
+    {
+      column: 30,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'Object.match',
+      line: 237,
+      method: 'match',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js',
+      function: 'matcher',
+      line: 86,
+      method: null,
+      native: false
+    },
+    {
+      column: 62,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js',
+      function: 'new Layer',
+      line: 93,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js',
+      function: 'Function.use',
+      line: 398,
+      method: 'use',
+      native: false
+    },
+    {
+      column: 21,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js',
+      function: null,
+      line: 222,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'Array.forEach',
+      line: null,
+      method: 'forEach',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js',
+      function: 'Function.use',
+      line: 219,
+      method: 'use',
+      native: false
+    }
+  ],
+  service: 'evently-backend',
+  environment: 'development',
+  version: '1.0.0',
+  timestamp: '2026-03-08 01:35:25'
+}
+{
+  error: PathError [TypeError]: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info
+      at name (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:96:19)
+      at parse (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:113:68)
+      at pathToRegexp (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:267:58)
+      at Object.match (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:237:30)
+      at matcher (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\lib\layer.js:86:23)
+      at new Layer (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\lib\layer.js:93:62)
+      at Function.use (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\index.js:398:19)
+      at Function.<anonymous> (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\express\lib\application.js:222:21)
+      at Array.forEach (<anonymous>)
+      at Function.use (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\express\lib\application.js:219:7) {
+    originalPath: '*'
+  },
+  level: 'error',
+  message: 'uncaughtException: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    'TypeError: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    '    at name (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:96:19)\n' +
+    '    at parse (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:113:68)\n' +
+    '    at pathToRegexp (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:267:58)\n' +
+    '    at Object.match (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:237:30)\n' +
+    '    at matcher (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:86:23)\n' +
+    '    at new Layer (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:93:62)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js:398:19)\n' +
+    '    at Function.<anonymous> (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:222:21)\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:219:7)',
+  stack: 'TypeError: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    '    at name (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:96:19)\n' +
+    '    at parse (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:113:68)\n' +
+    '    at pathToRegexp (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:267:58)\n' +
+    '    at Object.match (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:237:30)\n' +
+    '    at matcher (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:86:23)\n' +
+    '    at new Layer (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:93:62)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js:398:19)\n' +
+    '    at Function.<anonymous> (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:222:21)\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:219:7)',
+  exception: true,
+  date: 'Sun Mar 08 2026 01:35:25 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 29376,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v22.18.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 94781440,
+      heapTotal: 39632896,
+      heapUsed: 29136176,
+      external: 2947954,
+      arrayBuffers: 431485
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 4483.593 },
+  trace: [
+    {
+      column: 19,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'name',
+      line: 96,
+      method: null,
+      native: false
+    },
+    {
+      column: 68,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'parse',
+      line: 113,
+      method: null,
+      native: false
+    },
+    {
+      column: 58,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'pathToRegexp',
+      line: 267,
+      method: null,
+      native: false
+    },
+    {
+      column: 30,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'Object.match',
+      line: 237,
+      method: 'match',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js',
+      function: 'matcher',
+      line: 86,
+      method: null,
+      native: false
+    },
+    {
+      column: 62,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js',
+      function: 'new Layer',
+      line: 93,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js',
+      function: 'Function.use',
+      line: 398,
+      method: 'use',
+      native: false
+    },
+    {
+      column: 21,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js',
+      function: null,
+      line: 222,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'Array.forEach',
+      line: null,
+      method: 'forEach',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js',
+      function: 'Function.use',
+      line: 219,
+      method: 'use',
+      native: false
+    }
+  ],
+  service: 'evently-backend',
+  environment: 'development',
+  version: '1.0.0',
+  timestamp: '2026-03-08 01:35:25'
+}
+{
+  error: PathError [TypeError]: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info
+      at name (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:96:19)
+      at parse (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:113:68)
+      at pathToRegexp (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:267:58)
+      at Object.match (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:237:30)
+      at matcher (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\lib\layer.js:86:23)
+      at new Layer (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\lib\layer.js:93:62)
+      at Function.use (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\index.js:398:19)
+      at Function.<anonymous> (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\express\lib\application.js:222:21)
+      at Array.forEach (<anonymous>)
+      at Function.use (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\express\lib\application.js:219:7) {
+    originalPath: '*'
+  },
+  level: 'error',
+  message: 'uncaughtException: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    'TypeError: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    '    at name (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:96:19)\n' +
+    '    at parse (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:113:68)\n' +
+    '    at pathToRegexp (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:267:58)\n' +
+    '    at Object.match (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:237:30)\n' +
+    '    at matcher (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:86:23)\n' +
+    '    at new Layer (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:93:62)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js:398:19)\n' +
+    '    at Function.<anonymous> (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:222:21)\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:219:7)',
+  stack: 'TypeError: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    '    at name (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:96:19)\n' +
+    '    at parse (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:113:68)\n' +
+    '    at pathToRegexp (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:267:58)\n' +
+    '    at Object.match (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:237:30)\n' +
+    '    at matcher (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:86:23)\n' +
+    '    at new Layer (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:93:62)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js:398:19)\n' +
+    '    at Function.<anonymous> (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:222:21)\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:219:7)',
+  exception: true,
+  date: 'Sun Mar 08 2026 01:35:36 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 2140,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v22.18.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 94138368,
+      heapTotal: 39370752,
+      heapUsed: 29093232,
+      external: 2947954,
+      arrayBuffers: 431485
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 4494.625 },
+  trace: [
+    {
+      column: 19,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'name',
+      line: 96,
+      method: null,
+      native: false
+    },
+    {
+      column: 68,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'parse',
+      line: 113,
+      method: null,
+      native: false
+    },
+    {
+      column: 58,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'pathToRegexp',
+      line: 267,
+      method: null,
+      native: false
+    },
+    {
+      column: 30,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'Object.match',
+      line: 237,
+      method: 'match',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js',
+      function: 'matcher',
+      line: 86,
+      method: null,
+      native: false
+    },
+    {
+      column: 62,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js',
+      function: 'new Layer',
+      line: 93,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js',
+      function: 'Function.use',
+      line: 398,
+      method: 'use',
+      native: false
+    },
+    {
+      column: 21,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js',
+      function: null,
+      line: 222,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'Array.forEach',
+      line: null,
+      method: 'forEach',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js',
+      function: 'Function.use',
+      line: 219,
+      method: 'use',
+      native: false
+    }
+  ],
+  service: 'evently-backend',
+  environment: 'development',
+  version: '1.0.0',
+  timestamp: '2026-03-08 01:35:36'
+}
+{
+  error: PathError [TypeError]: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info
+      at name (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:96:19)
+      at parse (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:113:68)
+      at pathToRegexp (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:267:58)
+      at Object.match (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:237:30)
+      at matcher (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\lib\layer.js:86:23)
+      at new Layer (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\lib\layer.js:93:62)
+      at Function.use (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\index.js:398:19)
+      at Function.<anonymous> (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\express\lib\application.js:222:21)
+      at Array.forEach (<anonymous>)
+      at Function.use (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\express\lib\application.js:219:7) {
+    originalPath: '*'
+  },
+  level: 'error',
+  message: 'uncaughtException: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    'TypeError: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    '    at name (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:96:19)\n' +
+    '    at parse (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:113:68)\n' +
+    '    at pathToRegexp (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:267:58)\n' +
+    '    at Object.match (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:237:30)\n' +
+    '    at matcher (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:86:23)\n' +
+    '    at new Layer (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:93:62)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js:398:19)\n' +
+    '    at Function.<anonymous> (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:222:21)\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:219:7)',
+  stack: 'TypeError: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    '    at name (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:96:19)\n' +
+    '    at parse (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:113:68)\n' +
+    '    at pathToRegexp (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:267:58)\n' +
+    '    at Object.match (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:237:30)\n' +
+    '    at matcher (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:86:23)\n' +
+    '    at new Layer (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:93:62)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js:398:19)\n' +
+    '    at Function.<anonymous> (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:222:21)\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:219:7)',
+  exception: true,
+  date: 'Sun Mar 08 2026 01:35:36 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 10236,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v22.18.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 94134272,
+      heapTotal: 39370752,
+      heapUsed: 29132944,
+      external: 2947954,
+      arrayBuffers: 431485
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 4494.625 },
+  trace: [
+    {
+      column: 19,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'name',
+      line: 96,
+      method: null,
+      native: false
+    },
+    {
+      column: 68,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'parse',
+      line: 113,
+      method: null,
+      native: false
+    },
+    {
+      column: 58,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'pathToRegexp',
+      line: 267,
+      method: null,
+      native: false
+    },
+    {
+      column: 30,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'Object.match',
+      line: 237,
+      method: 'match',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js',
+      function: 'matcher',
+      line: 86,
+      method: null,
+      native: false
+    },
+    {
+      column: 62,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js',
+      function: 'new Layer',
+      line: 93,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js',
+      function: 'Function.use',
+      line: 398,
+      method: 'use',
+      native: false
+    },
+    {
+      column: 21,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js',
+      function: null,
+      line: 222,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'Array.forEach',
+      line: null,
+      method: 'forEach',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js',
+      function: 'Function.use',
+      line: 219,
+      method: 'use',
+      native: false
+    }
+  ],
+  service: 'evently-backend',
+  environment: 'development',
+  version: '1.0.0',
+  timestamp: '2026-03-08 01:35:36'
+}
+{
+  error: PathError [TypeError]: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info
+      at name (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:96:19)
+      at parse (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:113:68)
+      at pathToRegexp (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:267:58)
+      at Object.match (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:237:30)
+      at matcher (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\lib\layer.js:86:23)
+      at new Layer (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\lib\layer.js:93:62)
+      at Function.use (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\index.js:398:19)
+      at Function.<anonymous> (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\express\lib\application.js:222:21)
+      at Array.forEach (<anonymous>)
+      at Function.use (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\express\lib\application.js:219:7) {
+    originalPath: '*'
+  },
+  level: 'error',
+  message: 'uncaughtException: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    'TypeError: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    '    at name (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:96:19)\n' +
+    '    at parse (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:113:68)\n' +
+    '    at pathToRegexp (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:267:58)\n' +
+    '    at Object.match (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:237:30)\n' +
+    '    at matcher (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:86:23)\n' +
+    '    at new Layer (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:93:62)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js:398:19)\n' +
+    '    at Function.<anonymous> (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:222:21)\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:219:7)',
+  stack: 'TypeError: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    '    at name (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:96:19)\n' +
+    '    at parse (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:113:68)\n' +
+    '    at pathToRegexp (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:267:58)\n' +
+    '    at Object.match (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:237:30)\n' +
+    '    at matcher (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:86:23)\n' +
+    '    at new Layer (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:93:62)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js:398:19)\n' +
+    '    at Function.<anonymous> (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:222:21)\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:219:7)',
+  exception: true,
+  date: 'Sun Mar 08 2026 01:35:46 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 10788,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v22.18.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 94183424,
+      heapTotal: 39632896,
+      heapUsed: 28880104,
+      external: 2947954,
+      arrayBuffers: 431485
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 4503.906 },
+  trace: [
+    {
+      column: 19,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'name',
+      line: 96,
+      method: null,
+      native: false
+    },
+    {
+      column: 68,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'parse',
+      line: 113,
+      method: null,
+      native: false
+    },
+    {
+      column: 58,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'pathToRegexp',
+      line: 267,
+      method: null,
+      native: false
+    },
+    {
+      column: 30,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'Object.match',
+      line: 237,
+      method: 'match',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js',
+      function: 'matcher',
+      line: 86,
+      method: null,
+      native: false
+    },
+    {
+      column: 62,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js',
+      function: 'new Layer',
+      line: 93,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js',
+      function: 'Function.use',
+      line: 398,
+      method: 'use',
+      native: false
+    },
+    {
+      column: 21,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js',
+      function: null,
+      line: 222,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'Array.forEach',
+      line: null,
+      method: 'forEach',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js',
+      function: 'Function.use',
+      line: 219,
+      method: 'use',
+      native: false
+    }
+  ],
+  service: 'evently-backend',
+  environment: 'development',
+  version: '1.0.0',
+  timestamp: '2026-03-08 01:35:46'
+}
+{
+  error: PathError [TypeError]: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info
+      at name (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:96:19)
+      at parse (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:113:68)
+      at pathToRegexp (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:267:58)
+      at Object.match (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:237:30)
+      at matcher (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\lib\layer.js:86:23)
+      at new Layer (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\lib\layer.js:93:62)
+      at Function.use (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\index.js:398:19)
+      at Function.<anonymous> (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\express\lib\application.js:222:21)
+      at Array.forEach (<anonymous>)
+      at Function.use (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\express\lib\application.js:219:7) {
+    originalPath: '*'
+  },
+  level: 'error',
+  message: 'uncaughtException: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    'TypeError: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    '    at name (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:96:19)\n' +
+    '    at parse (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:113:68)\n' +
+    '    at pathToRegexp (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:267:58)\n' +
+    '    at Object.match (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:237:30)\n' +
+    '    at matcher (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:86:23)\n' +
+    '    at new Layer (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:93:62)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js:398:19)\n' +
+    '    at Function.<anonymous> (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:222:21)\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:219:7)',
+  stack: 'TypeError: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    '    at name (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:96:19)\n' +
+    '    at parse (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:113:68)\n' +
+    '    at pathToRegexp (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:267:58)\n' +
+    '    at Object.match (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:237:30)\n' +
+    '    at matcher (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:86:23)\n' +
+    '    at new Layer (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:93:62)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js:398:19)\n' +
+    '    at Function.<anonymous> (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:222:21)\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:219:7)',
+  exception: true,
+  date: 'Sun Mar 08 2026 01:35:46 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 24716,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v22.18.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 93900800,
+      heapTotal: 39370752,
+      heapUsed: 28736152,
+      external: 2947954,
+      arrayBuffers: 431485
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 4503.906 },
+  trace: [
+    {
+      column: 19,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'name',
+      line: 96,
+      method: null,
+      native: false
+    },
+    {
+      column: 68,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'parse',
+      line: 113,
+      method: null,
+      native: false
+    },
+    {
+      column: 58,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'pathToRegexp',
+      line: 267,
+      method: null,
+      native: false
+    },
+    {
+      column: 30,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'Object.match',
+      line: 237,
+      method: 'match',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js',
+      function: 'matcher',
+      line: 86,
+      method: null,
+      native: false
+    },
+    {
+      column: 62,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js',
+      function: 'new Layer',
+      line: 93,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js',
+      function: 'Function.use',
+      line: 398,
+      method: 'use',
+      native: false
+    },
+    {
+      column: 21,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js',
+      function: null,
+      line: 222,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'Array.forEach',
+      line: null,
+      method: 'forEach',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js',
+      function: 'Function.use',
+      line: 219,
+      method: 'use',
+      native: false
+    }
+  ],
+  service: 'evently-backend',
+  environment: 'development',
+  version: '1.0.0',
+  timestamp: '2026-03-08 01:35:46'
+}
+{
+  error: PathError [TypeError]: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info
+      at name (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:96:19)
+      at parse (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:113:68)
+      at pathToRegexp (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:267:58)
+      at Object.match (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:237:30)
+      at matcher (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\lib\layer.js:86:23)
+      at new Layer (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\lib\layer.js:93:62)
+      at Function.use (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\index.js:398:19)
+      at Function.<anonymous> (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\express\lib\application.js:222:21)
+      at Array.forEach (<anonymous>)
+      at Function.use (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\express\lib\application.js:219:7) {
+    originalPath: '*'
+  },
+  level: 'error',
+  message: 'uncaughtException: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    'TypeError: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    '    at name (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:96:19)\n' +
+    '    at parse (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:113:68)\n' +
+    '    at pathToRegexp (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:267:58)\n' +
+    '    at Object.match (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:237:30)\n' +
+    '    at matcher (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:86:23)\n' +
+    '    at new Layer (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:93:62)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js:398:19)\n' +
+    '    at Function.<anonymous> (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:222:21)\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:219:7)',
+  stack: 'TypeError: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    '    at name (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:96:19)\n' +
+    '    at parse (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:113:68)\n' +
+    '    at pathToRegexp (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:267:58)\n' +
+    '    at Object.match (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:237:30)\n' +
+    '    at matcher (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:86:23)\n' +
+    '    at new Layer (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:93:62)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js:398:19)\n' +
+    '    at Function.<anonymous> (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:222:21)\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:219:7)',
+  exception: true,
+  date: 'Sun Mar 08 2026 01:35:56 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 28452,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v22.18.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 94359552,
+      heapTotal: 39632896,
+      heapUsed: 29271056,
+      external: 2947954,
+      arrayBuffers: 431485
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 4514.593 },
+  trace: [
+    {
+      column: 19,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'name',
+      line: 96,
+      method: null,
+      native: false
+    },
+    {
+      column: 68,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'parse',
+      line: 113,
+      method: null,
+      native: false
+    },
+    {
+      column: 58,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'pathToRegexp',
+      line: 267,
+      method: null,
+      native: false
+    },
+    {
+      column: 30,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'Object.match',
+      line: 237,
+      method: 'match',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js',
+      function: 'matcher',
+      line: 86,
+      method: null,
+      native: false
+    },
+    {
+      column: 62,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js',
+      function: 'new Layer',
+      line: 93,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js',
+      function: 'Function.use',
+      line: 398,
+      method: 'use',
+      native: false
+    },
+    {
+      column: 21,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js',
+      function: null,
+      line: 222,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'Array.forEach',
+      line: null,
+      method: 'forEach',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js',
+      function: 'Function.use',
+      line: 219,
+      method: 'use',
+      native: false
+    }
+  ],
+  service: 'evently-backend',
+  environment: 'development',
+  version: '1.0.0',
+  timestamp: '2026-03-08 01:35:56'
+}
+{
+  error: PathError [TypeError]: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info
+      at name (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:96:19)
+      at parse (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:113:68)
+      at pathToRegexp (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:267:58)
+      at Object.match (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:237:30)
+      at matcher (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\lib\layer.js:86:23)
+      at new Layer (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\lib\layer.js:93:62)
+      at Function.use (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\index.js:398:19)
+      at Function.<anonymous> (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\express\lib\application.js:222:21)
+      at Array.forEach (<anonymous>)
+      at Function.use (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\express\lib\application.js:219:7) {
+    originalPath: '*'
+  },
+  level: 'error',
+  message: 'uncaughtException: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    'TypeError: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    '    at name (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:96:19)\n' +
+    '    at parse (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:113:68)\n' +
+    '    at pathToRegexp (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:267:58)\n' +
+    '    at Object.match (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:237:30)\n' +
+    '    at matcher (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:86:23)\n' +
+    '    at new Layer (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:93:62)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js:398:19)\n' +
+    '    at Function.<anonymous> (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:222:21)\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:219:7)',
+  stack: 'TypeError: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    '    at name (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:96:19)\n' +
+    '    at parse (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:113:68)\n' +
+    '    at pathToRegexp (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:267:58)\n' +
+    '    at Object.match (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:237:30)\n' +
+    '    at matcher (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:86:23)\n' +
+    '    at new Layer (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:93:62)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js:398:19)\n' +
+    '    at Function.<anonymous> (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:222:21)\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:219:7)',
+  exception: true,
+  date: 'Sun Mar 08 2026 01:35:56 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 30808,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v22.18.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 94179328,
+      heapTotal: 39632896,
+      heapUsed: 28880488,
+      external: 2947954,
+      arrayBuffers: 431485
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 4514.593 },
+  trace: [
+    {
+      column: 19,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'name',
+      line: 96,
+      method: null,
+      native: false
+    },
+    {
+      column: 68,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'parse',
+      line: 113,
+      method: null,
+      native: false
+    },
+    {
+      column: 58,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'pathToRegexp',
+      line: 267,
+      method: null,
+      native: false
+    },
+    {
+      column: 30,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'Object.match',
+      line: 237,
+      method: 'match',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js',
+      function: 'matcher',
+      line: 86,
+      method: null,
+      native: false
+    },
+    {
+      column: 62,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js',
+      function: 'new Layer',
+      line: 93,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js',
+      function: 'Function.use',
+      line: 398,
+      method: 'use',
+      native: false
+    },
+    {
+      column: 21,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js',
+      function: null,
+      line: 222,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'Array.forEach',
+      line: null,
+      method: 'forEach',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js',
+      function: 'Function.use',
+      line: 219,
+      method: 'use',
+      native: false
+    }
+  ],
+  service: 'evently-backend',
+  environment: 'development',
+  version: '1.0.0',
+  timestamp: '2026-03-08 01:35:56'
+}
+{
+  error: PathError [TypeError]: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info
+      at name (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:96:19)
+      at parse (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:113:68)
+      at pathToRegexp (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:267:58)
+      at Object.match (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:237:30)
+      at matcher (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\lib\layer.js:86:23)
+      at new Layer (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\lib\layer.js:93:62)
+      at Function.use (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\index.js:398:19)
+      at Function.<anonymous> (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\express\lib\application.js:222:21)
+      at Array.forEach (<anonymous>)
+      at Function.use (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\express\lib\application.js:219:7) {
+    originalPath: '*'
+  },
+  level: 'error',
+  message: 'uncaughtException: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    'TypeError: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    '    at name (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:96:19)\n' +
+    '    at parse (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:113:68)\n' +
+    '    at pathToRegexp (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:267:58)\n' +
+    '    at Object.match (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:237:30)\n' +
+    '    at matcher (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:86:23)\n' +
+    '    at new Layer (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:93:62)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js:398:19)\n' +
+    '    at Function.<anonymous> (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:222:21)\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:219:7)',
+  stack: 'TypeError: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    '    at name (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:96:19)\n' +
+    '    at parse (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:113:68)\n' +
+    '    at pathToRegexp (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:267:58)\n' +
+    '    at Object.match (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:237:30)\n' +
+    '    at matcher (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:86:23)\n' +
+    '    at new Layer (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:93:62)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js:398:19)\n' +
+    '    at Function.<anonymous> (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:222:21)\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:219:7)',
+  exception: true,
+  date: 'Sun Mar 08 2026 01:36:09 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 29872,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v22.18.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 94265344,
+      heapTotal: 39370752,
+      heapUsed: 29216504,
+      external: 2947954,
+      arrayBuffers: 431485
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 4527.406 },
+  trace: [
+    {
+      column: 19,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'name',
+      line: 96,
+      method: null,
+      native: false
+    },
+    {
+      column: 68,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'parse',
+      line: 113,
+      method: null,
+      native: false
+    },
+    {
+      column: 58,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'pathToRegexp',
+      line: 267,
+      method: null,
+      native: false
+    },
+    {
+      column: 30,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'Object.match',
+      line: 237,
+      method: 'match',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js',
+      function: 'matcher',
+      line: 86,
+      method: null,
+      native: false
+    },
+    {
+      column: 62,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js',
+      function: 'new Layer',
+      line: 93,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js',
+      function: 'Function.use',
+      line: 398,
+      method: 'use',
+      native: false
+    },
+    {
+      column: 21,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js',
+      function: null,
+      line: 222,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'Array.forEach',
+      line: null,
+      method: 'forEach',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js',
+      function: 'Function.use',
+      line: 219,
+      method: 'use',
+      native: false
+    }
+  ],
+  service: 'evently-backend',
+  environment: 'development',
+  version: '1.0.0',
+  timestamp: '2026-03-08 01:36:09'
+}
+{
+  error: PathError [TypeError]: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info
+      at name (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:96:19)
+      at parse (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:113:68)
+      at pathToRegexp (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:267:58)
+      at Object.match (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:237:30)
+      at matcher (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\lib\layer.js:86:23)
+      at new Layer (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\lib\layer.js:93:62)
+      at Function.use (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\index.js:398:19)
+      at Function.<anonymous> (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\express\lib\application.js:222:21)
+      at Array.forEach (<anonymous>)
+      at Function.use (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\express\lib\application.js:219:7) {
+    originalPath: '*'
+  },
+  level: 'error',
+  message: 'uncaughtException: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    'TypeError: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    '    at name (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:96:19)\n' +
+    '    at parse (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:113:68)\n' +
+    '    at pathToRegexp (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:267:58)\n' +
+    '    at Object.match (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:237:30)\n' +
+    '    at matcher (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:86:23)\n' +
+    '    at new Layer (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:93:62)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js:398:19)\n' +
+    '    at Function.<anonymous> (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:222:21)\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:219:7)',
+  stack: 'TypeError: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    '    at name (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:96:19)\n' +
+    '    at parse (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:113:68)\n' +
+    '    at pathToRegexp (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:267:58)\n' +
+    '    at Object.match (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:237:30)\n' +
+    '    at matcher (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:86:23)\n' +
+    '    at new Layer (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:93:62)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js:398:19)\n' +
+    '    at Function.<anonymous> (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:222:21)\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:219:7)',
+  exception: true,
+  date: 'Sun Mar 08 2026 01:36:09 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 25860,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v22.18.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 94457856,
+      heapTotal: 39370752,
+      heapUsed: 29137984,
+      external: 2947954,
+      arrayBuffers: 431485
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 4527.406 },
+  trace: [
+    {
+      column: 19,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'name',
+      line: 96,
+      method: null,
+      native: false
+    },
+    {
+      column: 68,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'parse',
+      line: 113,
+      method: null,
+      native: false
+    },
+    {
+      column: 58,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'pathToRegexp',
+      line: 267,
+      method: null,
+      native: false
+    },
+    {
+      column: 30,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'Object.match',
+      line: 237,
+      method: 'match',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js',
+      function: 'matcher',
+      line: 86,
+      method: null,
+      native: false
+    },
+    {
+      column: 62,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js',
+      function: 'new Layer',
+      line: 93,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js',
+      function: 'Function.use',
+      line: 398,
+      method: 'use',
+      native: false
+    },
+    {
+      column: 21,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js',
+      function: null,
+      line: 222,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'Array.forEach',
+      line: null,
+      method: 'forEach',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js',
+      function: 'Function.use',
+      line: 219,
+      method: 'use',
+      native: false
+    }
+  ],
+  service: 'evently-backend',
+  environment: 'development',
+  version: '1.0.0',
+  timestamp: '2026-03-08 01:36:09'
+}
+{
+  error: PathError [TypeError]: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info
+      at name (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:96:19)
+      at parse (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:113:68)
+      at pathToRegexp (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:267:58)
+      at Object.match (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:237:30)
+      at matcher (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\lib\layer.js:86:23)
+      at new Layer (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\lib\layer.js:93:62)
+      at Function.use (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\index.js:398:19)
+      at Function.<anonymous> (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\express\lib\application.js:222:21)
+      at Array.forEach (<anonymous>)
+      at Function.use (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\express\lib\application.js:219:7) {
+    originalPath: '*'
+  },
+  level: 'error',
+  message: 'uncaughtException: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    'TypeError: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    '    at name (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:96:19)\n' +
+    '    at parse (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:113:68)\n' +
+    '    at pathToRegexp (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:267:58)\n' +
+    '    at Object.match (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:237:30)\n' +
+    '    at matcher (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:86:23)\n' +
+    '    at new Layer (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:93:62)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js:398:19)\n' +
+    '    at Function.<anonymous> (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:222:21)\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:219:7)',
+  stack: 'TypeError: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    '    at name (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:96:19)\n' +
+    '    at parse (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:113:68)\n' +
+    '    at pathToRegexp (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:267:58)\n' +
+    '    at Object.match (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:237:30)\n' +
+    '    at matcher (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:86:23)\n' +
+    '    at new Layer (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:93:62)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js:398:19)\n' +
+    '    at Function.<anonymous> (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:222:21)\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:219:7)',
+  exception: true,
+  date: 'Sun Mar 08 2026 01:36:14 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 29960,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v22.18.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 93585408,
+      heapTotal: 39632896,
+      heapUsed: 28574544,
+      external: 2947954,
+      arrayBuffers: 431485
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 4532.718 },
+  trace: [
+    {
+      column: 19,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'name',
+      line: 96,
+      method: null,
+      native: false
+    },
+    {
+      column: 68,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'parse',
+      line: 113,
+      method: null,
+      native: false
+    },
+    {
+      column: 58,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'pathToRegexp',
+      line: 267,
+      method: null,
+      native: false
+    },
+    {
+      column: 30,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'Object.match',
+      line: 237,
+      method: 'match',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js',
+      function: 'matcher',
+      line: 86,
+      method: null,
+      native: false
+    },
+    {
+      column: 62,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js',
+      function: 'new Layer',
+      line: 93,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js',
+      function: 'Function.use',
+      line: 398,
+      method: 'use',
+      native: false
+    },
+    {
+      column: 21,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js',
+      function: null,
+      line: 222,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'Array.forEach',
+      line: null,
+      method: 'forEach',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js',
+      function: 'Function.use',
+      line: 219,
+      method: 'use',
+      native: false
+    }
+  ],
+  service: 'evently-backend',
+  environment: 'development',
+  version: '1.0.0',
+  timestamp: '2026-03-08 01:36:14'
+}
+{
+  error: PathError [TypeError]: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info
+      at name (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:96:19)
+      at parse (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:113:68)
+      at pathToRegexp (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:267:58)
+      at Object.match (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:237:30)
+      at matcher (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\lib\layer.js:86:23)
+      at new Layer (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\lib\layer.js:93:62)
+      at Function.use (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\index.js:398:19)
+      at Function.<anonymous> (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\express\lib\application.js:222:21)
+      at Array.forEach (<anonymous>)
+      at Function.use (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\express\lib\application.js:219:7) {
+    originalPath: '*'
+  },
+  level: 'error',
+  message: 'uncaughtException: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    'TypeError: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    '    at name (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:96:19)\n' +
+    '    at parse (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:113:68)\n' +
+    '    at pathToRegexp (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:267:58)\n' +
+    '    at Object.match (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:237:30)\n' +
+    '    at matcher (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:86:23)\n' +
+    '    at new Layer (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:93:62)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js:398:19)\n' +
+    '    at Function.<anonymous> (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:222:21)\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:219:7)',
+  stack: 'TypeError: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    '    at name (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:96:19)\n' +
+    '    at parse (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:113:68)\n' +
+    '    at pathToRegexp (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:267:58)\n' +
+    '    at Object.match (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:237:30)\n' +
+    '    at matcher (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:86:23)\n' +
+    '    at new Layer (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:93:62)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js:398:19)\n' +
+    '    at Function.<anonymous> (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:222:21)\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:219:7)',
+  exception: true,
+  date: 'Sun Mar 08 2026 01:36:14 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 4944,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v22.18.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 94277632,
+      heapTotal: 39370752,
+      heapUsed: 29212872,
+      external: 2947954,
+      arrayBuffers: 431485
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 4532.718 },
+  trace: [
+    {
+      column: 19,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'name',
+      line: 96,
+      method: null,
+      native: false
+    },
+    {
+      column: 68,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'parse',
+      line: 113,
+      method: null,
+      native: false
+    },
+    {
+      column: 58,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'pathToRegexp',
+      line: 267,
+      method: null,
+      native: false
+    },
+    {
+      column: 30,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'Object.match',
+      line: 237,
+      method: 'match',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js',
+      function: 'matcher',
+      line: 86,
+      method: null,
+      native: false
+    },
+    {
+      column: 62,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js',
+      function: 'new Layer',
+      line: 93,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js',
+      function: 'Function.use',
+      line: 398,
+      method: 'use',
+      native: false
+    },
+    {
+      column: 21,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js',
+      function: null,
+      line: 222,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'Array.forEach',
+      line: null,
+      method: 'forEach',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js',
+      function: 'Function.use',
+      line: 219,
+      method: 'use',
+      native: false
+    }
+  ],
+  service: 'evently-backend',
+  environment: 'development',
+  version: '1.0.0',
+  timestamp: '2026-03-08 01:36:14'
+}
+{
+  error: PathError [TypeError]: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info
+      at name (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:96:19)
+      at parse (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:113:68)
+      at pathToRegexp (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:267:58)
+      at Object.match (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:237:30)
+      at matcher (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\lib\layer.js:86:23)
+      at new Layer (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\lib\layer.js:93:62)
+      at Function.use (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\index.js:398:19)
+      at Function.<anonymous> (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\express\lib\application.js:222:21)
+      at Array.forEach (<anonymous>)
+      at Function.use (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\express\lib\application.js:219:7) {
+    originalPath: '*'
+  },
+  level: 'error',
+  message: 'uncaughtException: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    'TypeError: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    '    at name (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:96:19)\n' +
+    '    at parse (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:113:68)\n' +
+    '    at pathToRegexp (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:267:58)\n' +
+    '    at Object.match (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:237:30)\n' +
+    '    at matcher (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:86:23)\n' +
+    '    at new Layer (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:93:62)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js:398:19)\n' +
+    '    at Function.<anonymous> (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:222:21)\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:219:7)',
+  stack: 'TypeError: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    '    at name (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:96:19)\n' +
+    '    at parse (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:113:68)\n' +
+    '    at pathToRegexp (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:267:58)\n' +
+    '    at Object.match (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:237:30)\n' +
+    '    at matcher (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:86:23)\n' +
+    '    at new Layer (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:93:62)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js:398:19)\n' +
+    '    at Function.<anonymous> (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:222:21)\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:219:7)',
+  exception: true,
+  date: 'Sun Mar 08 2026 01:36:40 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 27724,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v22.18.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 94113792,
+      heapTotal: 39632896,
+      heapUsed: 28958288,
+      external: 2947954,
+      arrayBuffers: 431485
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 4558.156 },
+  trace: [
+    {
+      column: 19,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'name',
+      line: 96,
+      method: null,
+      native: false
+    },
+    {
+      column: 68,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'parse',
+      line: 113,
+      method: null,
+      native: false
+    },
+    {
+      column: 58,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'pathToRegexp',
+      line: 267,
+      method: null,
+      native: false
+    },
+    {
+      column: 30,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'Object.match',
+      line: 237,
+      method: 'match',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js',
+      function: 'matcher',
+      line: 86,
+      method: null,
+      native: false
+    },
+    {
+      column: 62,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js',
+      function: 'new Layer',
+      line: 93,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js',
+      function: 'Function.use',
+      line: 398,
+      method: 'use',
+      native: false
+    },
+    {
+      column: 21,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js',
+      function: null,
+      line: 222,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'Array.forEach',
+      line: null,
+      method: 'forEach',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js',
+      function: 'Function.use',
+      line: 219,
+      method: 'use',
+      native: false
+    }
+  ],
+  service: 'evently-backend',
+  environment: 'development',
+  version: '1.0.0',
+  timestamp: '2026-03-08 01:36:40'
+}
+{
+  error: PathError [TypeError]: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info
+      at name (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:96:19)
+      at parse (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:113:68)
+      at pathToRegexp (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:267:58)
+      at Object.match (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:237:30)
+      at matcher (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\lib\layer.js:86:23)
+      at new Layer (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\lib\layer.js:93:62)
+      at Function.use (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\index.js:398:19)
+      at Function.<anonymous> (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\express\lib\application.js:222:21)
+      at Array.forEach (<anonymous>)
+      at Function.use (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\express\lib\application.js:219:7) {
+    originalPath: '*'
+  },
+  level: 'error',
+  message: 'uncaughtException: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    'TypeError: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    '    at name (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:96:19)\n' +
+    '    at parse (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:113:68)\n' +
+    '    at pathToRegexp (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:267:58)\n' +
+    '    at Object.match (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:237:30)\n' +
+    '    at matcher (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:86:23)\n' +
+    '    at new Layer (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:93:62)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js:398:19)\n' +
+    '    at Function.<anonymous> (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:222:21)\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:219:7)',
+  stack: 'TypeError: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    '    at name (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:96:19)\n' +
+    '    at parse (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:113:68)\n' +
+    '    at pathToRegexp (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:267:58)\n' +
+    '    at Object.match (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:237:30)\n' +
+    '    at matcher (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:86:23)\n' +
+    '    at new Layer (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:93:62)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js:398:19)\n' +
+    '    at Function.<anonymous> (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:222:21)\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:219:7)',
+  exception: true,
+  date: 'Sun Mar 08 2026 01:36:40 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 28328,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v22.18.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 94347264,
+      heapTotal: 39370752,
+      heapUsed: 29009176,
+      external: 2947954,
+      arrayBuffers: 431485
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 4558.171 },
+  trace: [
+    {
+      column: 19,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'name',
+      line: 96,
+      method: null,
+      native: false
+    },
+    {
+      column: 68,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'parse',
+      line: 113,
+      method: null,
+      native: false
+    },
+    {
+      column: 58,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'pathToRegexp',
+      line: 267,
+      method: null,
+      native: false
+    },
+    {
+      column: 30,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'Object.match',
+      line: 237,
+      method: 'match',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js',
+      function: 'matcher',
+      line: 86,
+      method: null,
+      native: false
+    },
+    {
+      column: 62,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js',
+      function: 'new Layer',
+      line: 93,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js',
+      function: 'Function.use',
+      line: 398,
+      method: 'use',
+      native: false
+    },
+    {
+      column: 21,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js',
+      function: null,
+      line: 222,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'Array.forEach',
+      line: null,
+      method: 'forEach',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js',
+      function: 'Function.use',
+      line: 219,
+      method: 'use',
+      native: false
+    }
+  ],
+  service: 'evently-backend',
+  environment: 'development',
+  version: '1.0.0',
+  timestamp: '2026-03-08 01:36:40'
+}
+{
+  error: PathError [TypeError]: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info
+      at name (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:96:19)
+      at parse (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:113:68)
+      at pathToRegexp (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:267:58)
+      at Object.match (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:237:30)
+      at matcher (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\lib\layer.js:86:23)
+      at new Layer (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\lib\layer.js:93:62)
+      at Function.use (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\index.js:398:19)
+      at Function.<anonymous> (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\express\lib\application.js:222:21)
+      at Array.forEach (<anonymous>)
+      at Function.use (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\express\lib\application.js:219:7) {
+    originalPath: '*'
+  },
+  level: 'error',
+  message: 'uncaughtException: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    'TypeError: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    '    at name (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:96:19)\n' +
+    '    at parse (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:113:68)\n' +
+    '    at pathToRegexp (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:267:58)\n' +
+    '    at Object.match (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:237:30)\n' +
+    '    at matcher (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:86:23)\n' +
+    '    at new Layer (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:93:62)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js:398:19)\n' +
+    '    at Function.<anonymous> (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:222:21)\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:219:7)',
+  stack: 'TypeError: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    '    at name (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:96:19)\n' +
+    '    at parse (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:113:68)\n' +
+    '    at pathToRegexp (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:267:58)\n' +
+    '    at Object.match (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:237:30)\n' +
+    '    at matcher (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:86:23)\n' +
+    '    at new Layer (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:93:62)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js:398:19)\n' +
+    '    at Function.<anonymous> (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:222:21)\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:219:7)',
+  exception: true,
+  date: 'Sun Mar 08 2026 01:36:49 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 29236,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v22.18.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 94363648,
+      heapTotal: 39370752,
+      heapUsed: 29136432,
+      external: 2947954,
+      arrayBuffers: 431485
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 4567.562 },
+  trace: [
+    {
+      column: 19,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'name',
+      line: 96,
+      method: null,
+      native: false
+    },
+    {
+      column: 68,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'parse',
+      line: 113,
+      method: null,
+      native: false
+    },
+    {
+      column: 58,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'pathToRegexp',
+      line: 267,
+      method: null,
+      native: false
+    },
+    {
+      column: 30,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'Object.match',
+      line: 237,
+      method: 'match',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js',
+      function: 'matcher',
+      line: 86,
+      method: null,
+      native: false
+    },
+    {
+      column: 62,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js',
+      function: 'new Layer',
+      line: 93,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js',
+      function: 'Function.use',
+      line: 398,
+      method: 'use',
+      native: false
+    },
+    {
+      column: 21,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js',
+      function: null,
+      line: 222,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'Array.forEach',
+      line: null,
+      method: 'forEach',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js',
+      function: 'Function.use',
+      line: 219,
+      method: 'use',
+      native: false
+    }
+  ],
+  service: 'evently-backend',
+  environment: 'development',
+  version: '1.0.0',
+  timestamp: '2026-03-08 01:36:49'
+}
+{
+  error: PathError [TypeError]: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info
+      at name (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:96:19)
+      at parse (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:113:68)
+      at pathToRegexp (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:267:58)
+      at Object.match (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\path-to-regexp\dist\index.js:237:30)
+      at matcher (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\lib\layer.js:86:23)
+      at new Layer (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\lib\layer.js:93:62)
+      at Function.use (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\router\index.js:398:19)
+      at Function.<anonymous> (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\express\lib\application.js:222:21)
+      at Array.forEach (<anonymous>)
+      at Function.use (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\node_modules\express\lib\application.js:219:7) {
+    originalPath: '*'
+  },
+  level: 'error',
+  message: 'uncaughtException: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    'TypeError: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    '    at name (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:96:19)\n' +
+    '    at parse (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:113:68)\n' +
+    '    at pathToRegexp (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:267:58)\n' +
+    '    at Object.match (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:237:30)\n' +
+    '    at matcher (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:86:23)\n' +
+    '    at new Layer (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:93:62)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js:398:19)\n' +
+    '    at Function.<anonymous> (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:222:21)\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:219:7)',
+  stack: 'TypeError: Missing parameter name at index 1: *; visit https://git.new/pathToRegexpError for info\n' +
+    '    at name (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:96:19)\n' +
+    '    at parse (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:113:68)\n' +
+    '    at pathToRegexp (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:267:58)\n' +
+    '    at Object.match (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js:237:30)\n' +
+    '    at matcher (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:86:23)\n' +
+    '    at new Layer (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js:93:62)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js:398:19)\n' +
+    '    at Function.<anonymous> (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:222:21)\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at Function.use (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js:219:7)',
+  exception: true,
+  date: 'Sun Mar 08 2026 01:36:49 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 24128,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v22.18.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 93691904,
+      heapTotal: 39895040,
+      heapUsed: 28207224,
+      external: 2947954,
+      arrayBuffers: 431485
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 4567.562 },
+  trace: [
+    {
+      column: 19,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'name',
+      line: 96,
+      method: null,
+      native: false
+    },
+    {
+      column: 68,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'parse',
+      line: 113,
+      method: null,
+      native: false
+    },
+    {
+      column: 58,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'pathToRegexp',
+      line: 267,
+      method: null,
+      native: false
+    },
+    {
+      column: 30,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'Object.match',
+      line: 237,
+      method: 'match',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js',
+      function: 'matcher',
+      line: 86,
+      method: null,
+      native: false
+    },
+    {
+      column: 62,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\lib\\layer.js',
+      function: 'new Layer',
+      line: 93,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\router\\index.js',
+      function: 'Function.use',
+      line: 398,
+      method: 'use',
+      native: false
+    },
+    {
+      column: 21,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js',
+      function: null,
+      line: 222,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'Array.forEach',
+      line: null,
+      method: 'forEach',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\node_modules\\express\\lib\\application.js',
+      function: 'Function.use',
+      line: 219,
+      method: 'use',
+      native: false
+    }
+  ],
+  service: 'evently-backend',
+  environment: 'development',
+  version: '1.0.0',
+  timestamp: '2026-03-08 01:36:49'
+}
+{
+  error: ReferenceError: notFoundHandler is not defined
+      at Object.<anonymous> (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\server.js:94:9)
+      at Module._compile (node:internal/modules/cjs/loader:1688:14)
+      at Object..js (node:internal/modules/cjs/loader:1820:10)
+      at Module.load (node:internal/modules/cjs/loader:1423:32)
+      at Function._load (node:internal/modules/cjs/loader:1246:12)
+      at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+      at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+      at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+      at node:internal/main/run_main_module:36:49,
+  level: 'error',
+  message: 'uncaughtException: notFoundHandler is not defined\n' +
+    'ReferenceError: notFoundHandler is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\server.js:94:9)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1688:14)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1820:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1423:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1246:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n' +
+    '    at node:internal/main/run_main_module:36:49',
+  stack: 'ReferenceError: notFoundHandler is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\server.js:94:9)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1688:14)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1820:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1423:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1246:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n' +
+    '    at node:internal/main/run_main_module:36:49',
+  exception: true,
+  date: 'Sun Mar 08 2026 01:37:54 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 29056,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v22.18.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 94228480,
+      heapTotal: 39370752,
+      heapUsed: 28998560,
+      external: 2947954,
+      arrayBuffers: 431485
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 4632.281 },
+  trace: [
+    {
+      column: 9,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\server.js',
+      function: null,
+      line: 94,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1688,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Object..js',
+      line: 1820,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1423,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Function._load',
+      line: 1246,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:diagnostics_channel',
+      function: 'TracingChannel.traceSync',
+      line: 322,
+      method: 'traceSync',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapModuleLoad',
+      line: 235,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: 'node:internal/modules/run_main',
+      function: 'Function.executeUserEntryPoint [as runMain]',
+      line: 171,
+      method: 'executeUserEntryPoint [as runMain]',
+      native: false
+    },
+    {
+      column: 49,
+      file: 'node:internal/main/run_main_module',
+      function: null,
+      line: 36,
+      method: null,
+      native: false
+    }
+  ],
+  service: 'evently-backend',
+  environment: 'development',
+  version: '1.0.0',
+  timestamp: '2026-03-08 01:37:54'
+}
+{
+  error: ReferenceError: notFoundHandler is not defined
+      at Object.<anonymous> (C:\Users\pswag\OneDrive\Desktop\HYDRA\evently-backend\server.js:94:9)
+      at Module._compile (node:internal/modules/cjs/loader:1688:14)
+      at Object..js (node:internal/modules/cjs/loader:1820:10)
+      at Module.load (node:internal/modules/cjs/loader:1423:32)
+      at Function._load (node:internal/modules/cjs/loader:1246:12)
+      at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+      at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+      at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+      at node:internal/main/run_main_module:36:49,
+  level: 'error',
+  message: 'uncaughtException: notFoundHandler is not defined\n' +
+    'ReferenceError: notFoundHandler is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\server.js:94:9)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1688:14)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1820:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1423:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1246:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n' +
+    '    at node:internal/main/run_main_module:36:49',
+  stack: 'ReferenceError: notFoundHandler is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\server.js:94:9)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1688:14)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1820:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1423:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1246:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n' +
+    '    at node:internal/main/run_main_module:36:49',
+  exception: true,
+  date: 'Sun Mar 08 2026 01:37:54 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 27692,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v22.18.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 93810688,
+      heapTotal: 39370752,
+      heapUsed: 29005520,
+      external: 2947954,
+      arrayBuffers: 431485
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 4632.593 },
+  trace: [
+    {
+      column: 9,
+      file: 'C:\\Users\\pswag\\OneDrive\\Desktop\\HYDRA\\evently-backend\\server.js',
+      function: null,
+      line: 94,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1688,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Object..js',
+      line: 1820,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1423,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Function._load',
+      line: 1246,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:diagnostics_channel',
+      function: 'TracingChannel.traceSync',
+      line: 322,
+      method: 'traceSync',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapModuleLoad',
+      line: 235,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: 'node:internal/modules/run_main',
+      function: 'Function.executeUserEntryPoint [as runMain]',
+      line: 171,
+      method: 'executeUserEntryPoint [as runMain]',
+      native: false
+    },
+    {
+      column: 49,
+      file: 'node:internal/main/run_main_module',
+      function: null,
+      line: 36,
+      method: null,
+      native: false
+    }
+  ],
+  service: 'evently-backend',
+  environment: 'development',
+  version: '1.0.0',
+  timestamp: '2026-03-08 01:37:54'
+}

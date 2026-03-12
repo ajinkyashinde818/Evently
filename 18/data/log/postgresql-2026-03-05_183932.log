@@ -1,0 +1,102 @@
+2026-03-05 18:39:33 IST LOG:  database system was shut down at 2026-03-05 18:38:23 IST
+2026-03-05 18:44:33 IST LOG:  checkpoint starting: time
+2026-03-05 18:44:33 IST LOG:  checkpoint complete: wrote 3 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.326 s, sync=0.003 s, total=0.348 s; sync files=5, longest=0.002 s, average=0.001 s; distance=15 kB, estimate=15 kB; lsn=0/22E0FE0, redo lsn=0/22E0F50
+2026-03-05 18:46:58 IST ERROR:  update or delete on table "events" violates foreign key constraint "registrations_event_id_fkey" on table "registrations"
+2026-03-05 18:46:58 IST DETAIL:  Key (id)=(5) is still referenced from table "registrations".
+2026-03-05 18:46:58 IST STATEMENT:  DELETE FROM events WHERE id=$1
+2026-03-05 18:47:02 IST ERROR:  update or delete on table "events" violates foreign key constraint "registrations_event_id_fkey" on table "registrations"
+2026-03-05 18:47:02 IST DETAIL:  Key (id)=(5) is still referenced from table "registrations".
+2026-03-05 18:47:02 IST STATEMENT:  DELETE FROM events WHERE id=$1
+2026-03-05 18:47:29 IST ERROR:  update or delete on table "events" violates foreign key constraint "registrations_event_id_fkey" on table "registrations"
+2026-03-05 18:47:29 IST DETAIL:  Key (id)=(5) is still referenced from table "registrations".
+2026-03-05 18:47:29 IST STATEMENT:  DELETE FROM events WHERE id=$1
+2026-03-05 18:47:32 IST ERROR:  update or delete on table "events" violates foreign key constraint "registrations_event_id_fkey" on table "registrations"
+2026-03-05 18:47:32 IST DETAIL:  Key (id)=(2) is still referenced from table "registrations".
+2026-03-05 18:47:32 IST STATEMENT:  DELETE FROM events WHERE id=$1
+2026-03-05 18:49:33 IST LOG:  checkpoint starting: time
+2026-03-05 18:49:34 IST LOG:  checkpoint complete: wrote 4 buffers (0.0%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.437 s, sync=0.002 s, total=0.453 s; sync files=5, longest=0.001 s, average=0.001 s; distance=8 kB, estimate=14 kB; lsn=0/22E32C8, redo lsn=0/22E3270
+2026-03-05 18:54:33 IST LOG:  checkpoint starting: time
+2026-03-05 18:54:33 IST LOG:  checkpoint complete: wrote 6 buffers (0.0%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.656 s, sync=0.007 s, total=0.690 s; sync files=7, longest=0.003 s, average=0.001 s; distance=9 kB, estimate=13 kB; lsn=0/22E5750, redo lsn=0/22E56F8
+2026-03-05 18:59:33 IST LOG:  checkpoint starting: time
+2026-03-05 18:59:34 IST LOG:  checkpoint complete: wrote 1 buffers (0.0%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.115 s, sync=0.002 s, total=0.130 s; sync files=2, longest=0.002 s, average=0.001 s; distance=5 kB, estimate=13 kB; lsn=0/22E6F40, redo lsn=0/22E6EE8
+2026-03-05 19:14:13 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-05 19:29:33 IST LOG:  checkpoint starting: time
+2026-03-05 19:29:33 IST LOG:  checkpoint complete: wrote 3 buffers (0.0%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.329 s, sync=0.011 s, total=0.357 s; sync files=4, longest=0.009 s, average=0.003 s; distance=3 kB, estimate=12 kB; lsn=0/22E7D50, redo lsn=0/22E7CF8
+2026-03-05 19:38:29 IST ERROR:  relation "event_images" already exists
+2026-03-05 19:38:29 IST STATEMENT:  CREATE TABLE event_images (
+	    id SERIAL PRIMARY KEY,
+	    event_id INTEGER REFERENCES events(id) ON DELETE CASCADE,
+	    file_name TEXT,
+	    uploaded_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+	);
+2026-03-05 19:39:02 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-05 19:39:33 IST LOG:  checkpoint starting: time
+2026-03-05 19:39:37 IST LOG:  checkpoint complete: wrote 40 buffers (0.2%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=4.403 s, sync=0.012 s, total=4.423 s; sync files=43, longest=0.001 s, average=0.001 s; distance=218 kB, estimate=218 kB; lsn=0/23206B0, redo lsn=0/231E630
+2026-03-05 19:42:51 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-05 19:43:20 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-05 19:43:24 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-05 19:43:25 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-05 19:43:41 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-05 19:43:43 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-05 19:43:57 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-05 19:43:58 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-05 19:44:00 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-05 19:44:17 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-05 19:44:20 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-05 19:44:38 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-05 19:44:55 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-05 19:45:17 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-05 19:45:19 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-05 19:49:33 IST LOG:  checkpoint starting: time
+2026-03-05 19:49:34 IST LOG:  checkpoint complete: wrote 3 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.328 s, sync=0.011 s, total=0.357 s; sync files=3, longest=0.010 s, average=0.004 s; distance=21 kB, estimate=198 kB; lsn=0/2323D40, redo lsn=0/2323CE8
+2026-03-05 20:13:04 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-05 20:13:28 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-05 20:13:29 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-05 20:13:32 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-05 20:19:16 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-05 20:19:17 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-05 20:19:33 IST LOG:  checkpoint starting: time
+2026-03-05 20:19:33 IST LOG:  checkpoint complete: wrote 3 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.322 s, sync=0.002 s, total=0.332 s; sync files=3, longest=0.001 s, average=0.001 s; distance=20 kB, estimate=180 kB; lsn=0/2328DF0, redo lsn=0/2328D98
+2026-03-05 20:19:41 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-05 20:19:59 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-05 20:21:24 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-05 20:29:33 IST LOG:  checkpoint starting: time
+2026-03-05 20:29:33 IST LOG:  checkpoint complete: wrote 2 buffers (0.0%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.215 s, sync=0.002 s, total=0.221 s; sync files=3, longest=0.002 s, average=0.001 s; distance=9 kB, estimate=163 kB; lsn=0/232B450, redo lsn=0/232B3F8
+2026-03-05 20:54:11 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-05 20:54:11 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-05 20:54:18 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-05 20:54:18 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-05 22:36:59 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-05 22:36:59 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	

@@ -1,0 +1,153 @@
+/* PAGE BACKGROUND */
+.home-page {
+  height: 100vh;
+  padding: 28px 60px;
+
+  background: linear-gradient(
+    135deg,
+    #9cb4d5,
+    #8f9dc8
+  );
+
+  font-family: "Segoe UI", sans-serif;
+  color: #0f172a;
+}
+
+/* TOPBAR */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* LOGO */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 30px;
+  font-weight: 700;
+  color:#fbfafc;
+}
+
+.logo img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+/* ACTION BUTTONS */
+.actions {
+  display: flex;
+  gap: 12px;
+}
+
+button {
+  border: none;
+  border-radius: 999px;
+  padding: 8px 18px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+/* Ghost */
+.ghost-btn {
+  background: #f1e7dc;
+  color: #2e225c;
+}
+
+.ghost-btn:hover {
+  background: #292827;
+}
+
+/* Primary */
+.primary-btn {
+  background: #08090c;
+  color: white;
+}
+
+.primary-btn:hover {
+  background: #5c3722;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 12px;
+  color: #0f172a;
+}
+
+.hero p {
+  font-size: 17px;
+  color: #1f1f22;
+  margin-bottom: 26px;
+}
+
+/* CTA */
+.cta-btn {
+  background: #000000;
+  color: white;
+  padding: 12px 26px;
+  border-radius: 999px;
+  font-size: 18px;
+  font-weight: 600;
+
+  box-shadow: 0 10px 24px rgba(122, 75, 46, 0.25);
+}
+
+.cta-btn:hover {
+  background: #5c3722;
+  transform: translateY(-1px);
+}
+
+/* FEATURES */
+.features {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+}
+
+/* FEATURE CARD */
+.feature-card {
+  width: 260px;
+  padding: 22px;
+  border-radius: 18px;
+
+  background: rgb(195, 194, 200);
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: 0.25s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+}
+
+/* ICON */
+.icon {
+  margin-bottom: 10px;
+}
+
+.icon svg{
+  width:26px;
+  height:26px;
+}
+
+/* TEXT */
+.feature-card h3 {
+  margin: 6px 0;
+  font-size: 20px;
+}
+
+.feature-card p {
+  font-size: 15px;
+  color: #222a37;
+}

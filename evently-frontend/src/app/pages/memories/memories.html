@@ -1,0 +1,75 @@
+<div class="memories-page">
+
+  <div class="page-header">
+    <h1>
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:8px;vertical-align:middle;">
+        <rect x="3" y="5" width="18" height="14" rx="2" ry="2"></rect>
+        <path d="M9 5l2-2h2l2 2"></path>
+        <circle cx="12" cy="12" r="3"></circle>
+        <path d="M21 21v-2a4 4 0 00-3-3.87"></path>
+        <path d="M16 3.13a4 4 0 010 7.75"></path>
+      </svg>
+      Event Memories
+    </h1>
+    <p>View images from your events</p>
+    
+    <!-- Search Bar -->
+    <div class="search-container">
+      <input 
+        type="text" 
+        placeholder="Search events..." 
+        [(ngModel)]="searchTerm"
+        (keyup)="filterEvents()"
+        class="search-input"
+      >
+      <button *ngIf="searchTerm" class="clear-btn" (click)="clearSearch()">
+        ✖
+      </button>
+    </div>
+  </div>
+
+  <div class="memories-grid">
+
+    <div class="memory-card" *ngFor="let event of filteredEvents; trackBy:trackByEvent">
+
+      <div class="card-header">
+        <h3>{{ event.title }}</h3>
+
+        <span class="badge" [ngClass]="event.status">
+          {{ event.status }}
+        </span>
+      </div>
+
+      <p class="location">
+        <span class="inline-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 21s-6-5.373-6-10a6 6 0 1112 0c0 4.627-6 10-6 10z"></path>
+            <circle cx="12" cy="11" r="2.5"></circle>
+          </svg>
+        </span>
+        {{ event.location }}
+      </p>
+
+      <div class="actions">
+
+        <button class="images-btn" (click)="openImages(event.id)">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:6px;">
+            <rect x="3" y="3" width="18" height="14" rx="2" ry="2"></rect>
+            <circle cx="8.5" cy="9" r="1.5"></circle>
+            <polyline points="21 13 16 9 10 15"></polyline>
+          </svg>
+          View Images
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Empty State -->
+  <div *ngIf="filteredEvents.length === 0" class="empty-state">
+    <p>No events found matching "{{ searchTerm }}".</p>
+  </div>
+
+</div>

@@ -1,0 +1,56 @@
+<div class="certificates-page">
+
+  <div class="page-header">
+    <h1>
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:8px;vertical-align:middle;">
+        <rect x="3" y="3" width="18" height="14" rx="2" ry="2"></rect>
+        <path d="M7 17l5 4 5-4"></path>
+        <path d="M8 9h8"></path>
+      </svg>
+      Certificates
+    </h1>
+    <p>View & download certificates from this event</p>
+  </div>
+
+  <div *ngIf="loading" class="loading">
+    Loading certificates...
+  </div>
+
+  <div class="cert-list" *ngIf="!loading">
+
+    <div class="cert-card" *ngFor="let cert of filteredCertificates">
+
+      <span class="cert-name">
+        {{ cert.name }}
+      </span>
+
+      <div class="actions">
+
+        <button (click)="viewCertificate(cert)">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"></path>
+            <circle cx="12" cy="12" r="3"></circle>
+          </svg>
+          <span>View</span>
+        </button>
+
+        <button (click)="downloadCertificate(cert)">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 3v12"></path>
+            <path d="M8 11l4 4 4-4"></path>
+            <rect x="4" y="17" width="16" height="3" rx="1.5"></rect>
+          </svg>
+          <span>Download</span>
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="empty-state" *ngIf="!loading && filteredCertificates.length === 0">
+    No certificates available for this event
+  </div>
+
+</div>

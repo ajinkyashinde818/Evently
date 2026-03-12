@@ -1,0 +1,135 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 240px;
+  height: 100vh;
+  /* Warm brand gradient to match buttons (link-btn/action-btn) */
+  background: linear-gradient(180deg, #6f5a41, #8b7355);
+  color: #fdf7ef;
+  padding: 20px;
+
+  box-shadow: 4px 0 15px rgba(0,0,0,0.25);
+  transition: 0.3s ease;
+  overflow: hidden;
+}
+
+/* Collapsed */
+.sidebar.collapsed {
+  width: 70px;
+}
+
+/* Toggle Arrow */
+.toggle-btn {
+  position: absolute;
+  top: 18px;
+  right: 10px;
+
+  background: rgba(255,255,255,0.08);
+  border: none;
+  color: white;
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+.toggle-btn:hover {
+  background: rgba(255,255,255,0.18);
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #fbfafc;
+  margin-bottom: 40px;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+/* Nav */
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  /* Keep navigation close to the logo instead of pinned to bottom */
+  margin-top: 10px;
+  padding-bottom: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f5e8d6;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+nav a:hover {
+  background: rgba(0,0,0,0.08);
+  color: #ffffff;
+  transform: translateX(5px);
+}
+
+nav a.active {
+  background: #4f3d2c;
+  color: #ffffff;
+}
+
+/* Icons stay visible */
+nav span:first-child {
+  font-size: 29px;
+}
+
+/* Professional SVG Icons */
+.sidebar-icon {
+  width: 26px;
+  height: 26px;
+  stroke: currentColor;
+  stroke-width: 2;
+  transition: all 0.3s ease;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+nav a:hover .sidebar-icon {
+  stroke: rgb(0, 0, 0);
+  transform: scale(1.1);
+}
+
+nav a.active .sidebar-icon {
+  stroke: white;
+}
+
+/* Center icons when collapsed */
+.sidebar.collapsed nav a {
+  justify-content: center;
+}
+
+.sidebar {
+  transition: width 0.3s ease;
+}
+
+/* Hide text smoothly */
+.sidebar span {
+  transition: opacity 0.2s ease;
+}
+
+.sidebar.collapsed span:not(:first-child) {
+  opacity: 0;
+}

@@ -1,0 +1,23 @@
+<svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="25" cy="25" r="24" fill="#6f5a41" stroke="#8b7355" stroke-width="2"/>
+  
+  <!-- Calendar Icon -->
+  <rect x="12" y="14" width="26" height="20" rx="2" ry="2" fill="#fdf7ef" stroke="#6f5a41" stroke-width="1.5"/>
+  
+  <!-- Calendar Header -->
+  <rect x="12" y="14" width="26" height="6" rx="2" ry="2" fill="#8b7355"/>
+  
+  <!-- Calendar Rings -->
+  <rect x="18" y="11" width="3" height="6" rx="1" fill="#fdf7ef"/>
+  <rect x="29" y="11" width="3" height="6" rx="1" fill="#fdf7ef"/>
+  
+  <!-- Event Dots -->
+  <circle cx="18" cy="26" r="1.5" fill="#6f5a41"/>
+  <circle cx="25" cy="26" r="1.5" fill="#6f5a41"/>
+  <circle cx="32" cy="26" r="1.5" fill="#6f5a41"/>
+  
+  <circle cx="18" cy="31" r="1.5" fill="#6f5a41"/>
+  <circle cx="25" cy="31" r="1.5" fill="#6f5a41"/>
+  <circle cx="32" cy="31" r="1.5" fill="#6f5a41"/>
+</svg>

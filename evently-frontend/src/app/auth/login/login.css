@@ -1,0 +1,153 @@
+.login-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(135deg, #9cb4d5, #8f9dc8);
+  padding: 20px;
+}
+
+/* Card */
+.login-card {
+  width: 95%;
+  max-width: 1000px;
+  min-height: 500px;
+  background: #c4adad;
+  border-radius: 18px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.35);
+}
+
+/* LEFT */
+.login-left {
+  padding: 40px;
+  background: linear-gradient(135deg, #f8f5f0, #ffffff);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #b9aaa2;
+  margin-bottom: 25px;
+}
+
+.brand img {
+  width: 40px;
+  height: 40px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #0f172a;
+}
+
+p {
+  color: #7a4b2e;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+/* Inputs */
+.input-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  border: 1px solid rgba(122, 75, 46, 0.25);
+  border-radius: 10px;
+  padding: 10px 12px;
+  margin-bottom: 14px;
+
+  background: #ffffff;
+  transition: 0.2s ease;
+}
+
+.input-group:focus-within {
+  border-color: #948f8b;
+  box-shadow: 0 0 0 3px rgba(122, 75, 46, 0.15);
+}
+
+.input-group input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 14px;
+}
+
+.icon {
+  font-size: 16px;
+  opacity: 0.7;
+}
+
+.eye {
+  cursor: pointer;
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+/* Button */
+.login-btn {
+  width: 100%;
+  margin-top: 10px;
+  padding: 11px;
+  border: none;
+  border-radius: 10px;
+
+  background: linear-gradient(135deg, #665a98, #5c3722);
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.login-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(122, 75, 46, 0.35);
+}
+
+/* Signup */
+.signup-text {
+  margin-top: 18px;
+  font-size: 16px;
+  color: #64748b;
+  text-align: center;
+}
+
+.signup-text a {
+  color: #a69388;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.signup-text a:hover {
+  text-decoration: underline;
+}
+
+/* RIGHT */
+.login-right {
+  background: linear-gradient(135deg, #f3ede6, #e8ded2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.login-right img {
+  width: 85%;
+  max-width: 320px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px) scale(0.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}

@@ -1,0 +1,74 @@
+<div class="help-page">
+
+  <h1>Help & Support</h1>
+  <p>How can we help you today?</p>
+
+  <!-- Search -->
+  <div class="search-bar">
+    <span>🔎</span>
+    <input 
+      type="text"
+      [(ngModel)]="searchText"
+      placeholder="Search for answers..."
+    >
+  </div>
+
+  <div class="help-grid">
+
+    <!-- ===== FAQs ===== -->
+    <div class="faq-section">
+
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="faq-card" *ngFor="let faq of filteredFAQs">
+
+        <div class="faq-header" (click)="toggleFAQ(faq)">
+          <span>{{ faq.category }}</span>
+          <span>{{ faq.open ? '▴' : '▾' }}</span>
+        </div>
+
+        <div class="faq-body" *ngIf="faq.open">
+
+          <div class="faq-item" *ngFor="let q of faq.questions">
+            <strong>Q: {{ q.q }}</strong>
+            <p>A: {{ q.a }}</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- ===== Support Form ===== -->
+    <div class="support-section">
+
+      <h3>🪶 Still need help?</h3>
+      <p>Submit a support ticket and we'll get back to you.</p>
+<input type="text"
+[(ngModel)]="ticket.name"
+placeholder="Your Name">
+
+<input type="email"
+[(ngModel)]="ticket.email"
+placeholder="Your Email">
+
+<input type="text"
+[(ngModel)]="ticket.subject"
+placeholder="Subject">
+
+<textarea
+rows="4"
+[(ngModel)]="ticket.message"
+placeholder="Message"></textarea>
+
+<button (click)="submitTicket()">
+Submit Ticket
+</button>
+
+
+    </div>
+
+  </div>
+
+</div>

@@ -1,0 +1,146 @@
+.registrations-page {
+  padding: 10px 36px;
+  background: #f1f5f9;
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+  box-sizing: border-box;
+  animation: fadeIn 0.35s ease;
+}
+
+/* Page Header */
+.page-header h1 {
+  font-size: 28px;
+  margin-bottom: 4px;
+}
+
+.page-header p {
+  color: #64748b;
+  margin-bottom: 20px;
+}
+
+/* Search Bar */
+.search-container {
+  position: relative;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-icon {
+  width: 20px;
+  height: 20px;
+  color: #666;
+  flex-shrink: 0;
+}
+
+.search-input {
+  flex: 1;
+  padding: 12px 16px 12px 40px;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+.clear-btn {
+  background: none;
+  border: none;
+  color: #666;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 4px;
+  transition: color 0.3s ease;
+}
+
+.clear-btn:hover {
+  color: #333;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 16px;
+}
+
+.event-card {
+  position: relative;
+  background:rgb(209, 176, 176);
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.event-card:hover {
+  transform: translateY(-4px);
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.badge {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.badge.upcoming {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 2px dashed #e2e8f0;
+  margin-top: 40px;
+}
+
+.empty-state p {
+  color: #666;
+  font-size: 16px;
+  margin: 0;
+}
+
+.badge.completed {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.card-footer {
+  margin-top: 12px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.inline-icon{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  margin-right:6px;
+}
+
+.inline-icon svg{
+  width:16px;
+  height:16px;
+}
+
+.overlay-link {
+  position: absolute;
+  inset: 0;
+}

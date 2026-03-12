@@ -1,0 +1,43 @@
+2026-03-07 00:00:40 IST ERROR:  column "checked_in" of relation "registrations" does not exist at character 26
+2026-03-07 00:00:40 IST STATEMENT:  UPDATE registrations
+	SET checked_in=true
+	WHERE ticket_id=$1
+2026-03-07 00:03:18 IST ERROR:  column "checked_in" of relation "registrations" does not exist at character 26
+2026-03-07 00:03:18 IST STATEMENT:  UPDATE registrations
+	SET checked_in=true
+	WHERE ticket_id=$1
+2026-03-07 00:06:52 IST ERROR:  column "checked_in" of relation "registrations" does not exist at character 26
+2026-03-07 00:06:52 IST STATEMENT:  UPDATE registrations
+	SET checked_in=true
+	WHERE ticket_id=$1
+2026-03-07 00:07:02 IST ERROR:  column "checked_in" of relation "registrations" does not exist at character 26
+2026-03-07 00:07:02 IST STATEMENT:  UPDATE registrations
+	SET checked_in=true
+	WHERE ticket_id=$1
+2026-03-07 00:07:06 IST LOG:  checkpoint starting: time
+2026-03-07 00:07:07 IST LOG:  checkpoint complete: wrote 4 buffers (0.0%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.442 s, sync=0.010 s, total=0.467 s; sync files=5, longest=0.009 s, average=0.002 s; distance=1 kB, estimate=1 kB; lsn=0/24639C0, redo lsn=0/2463968
+2026-03-07 00:16:08 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-07 00:16:51 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-07 00:17:56 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-07 00:18:19 IST ERROR:  column "checked_in" of relation "registrations" does not exist at character 26
+2026-03-07 00:18:19 IST STATEMENT:  UPDATE registrations
+	SET checked_in=true
+	WHERE ticket_id=$1
+2026-03-07 00:20:09 IST ERROR:  column "checked_in" of relation "registrations" does not exist at character 26
+2026-03-07 00:20:09 IST STATEMENT:  UPDATE registrations
+	SET checked_in=true
+	WHERE ticket_id=$1
+2026-03-07 00:21:12 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-07 00:21:31 IST ERROR:  column "checked_in" of relation "registrations" does not exist at character 26
+2026-03-07 00:21:31 IST STATEMENT:  UPDATE registrations
+	SET checked_in=true
+	WHERE ticket_id=$1
+2026-03-07 00:21:56 IST FATAL:  terminating connection due to administrator command
+2026-03-07 00:21:56 IST FATAL:  terminating connection due to administrator command
+2026-03-07 00:21:56 IST LOG:  shutting down
+2026-03-07 00:21:56 IST LOG:  checkpoint starting: shutdown immediate
+2026-03-07 00:21:56 IST LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.032 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=1 kB; lsn=0/2463A70, redo lsn=0/2463A70

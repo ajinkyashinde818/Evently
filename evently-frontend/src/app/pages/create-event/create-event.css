@@ -1,0 +1,186 @@
+/* ===== Page ===== */
+/* ===== GLOBAL FIX (MOST IMPORTANT) ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.create-event-page {
+  padding: 18px 22px;   /* balanced inner spacing */
+  background: transparent;
+  min-height: 100%;
+  font-family: "Segoe UI", sans-serif;
+  box-sizing: border-box;
+
+  margin-left: 10px;    /* ✅ GAP from sidebar */
+}
+
+/* ===== Header ===== */
+.page-header {
+  margin-bottom: 18px;
+}
+
+.page-header h1 {
+  font-size: 28px;   /* ✅ Slightly bigger */
+  margin: 0;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.page-header p {
+  margin-top: 4px;
+  font-size: 15px;   /* ✅ Bigger */
+  color: #475569;
+}
+
+/* ===== Layout ===== */
+.form-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 18px;
+}
+
+@media (max-width: 1024px) {
+  .form-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== Cards ===== */
+.card {
+  background: white;
+  border-radius: 18px;
+  padding: 20px;
+  margin-bottom: 14px;
+
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+  border-left: 4px solid #6366f1;
+}
+
+/* ===== Section Titles ===== */
+.card h2 {
+  margin: 0 0 14px;
+  font-size: 18px;   /* ✅ Bigger */
+  font-weight: 700;
+  color: #0f172a;
+}
+
+/* ===== Labels ===== */
+label {
+  display: block;
+  font-size: 14px;   /* ✅ Bigger */
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #1e293b;
+}
+
+/* ===== Inputs ===== */
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 11px 13px;
+  border-radius: 12px;
+
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
+
+  font-size: 14px;   /* ✅ Slightly bigger */
+  color: #0f172a;
+  margin-bottom: 14px;
+
+  transition: 0.2s ease;
+  outline: none;
+}
+
+/* Focus */
+input:focus,
+select:focus,
+textarea:focus {
+  background: white;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 2px rgba(99,102,241,0.12);
+}
+
+/* Placeholder */
+::placeholder {
+  color: #94a3b8;
+  font-size: 13px;
+}
+
+/* ===== Row ===== */
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+/* ===== Invalid Field ===== */
+.invalid {
+  border-color: #ef4444 !important;
+  background: #fef2f2;
+}
+
+/* ===== Buttons ===== */
+.form-actions {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+/* Draft */
+.draft-btn {
+  background: #e2e8f0;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 13px;
+  transition: 0.2s;
+}
+
+.draft-btn:hover {
+  background: #cbd5f5;
+}
+
+/* Upcoming */
+.upcoming-btn {
+  background: #e2e8f0;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.upcoming-btn:hover {
+  background: #cbd5f5;
+}
+
+/* Publish */
+.publish-btn {
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 13px;
+
+  box-shadow: 0 4px 12px rgba(79,70,229,0.35);
+  transition: 0.2s;
+}
+
+.publish-btn:hover {
+  transform: translateY(-1px);
+}
+.error{
+color:#e53935;
+font-size:12px;
+margin-top:4px;
+}

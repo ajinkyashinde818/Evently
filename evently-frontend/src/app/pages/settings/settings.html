@@ -1,0 +1,100 @@
+<div class="settings-page">
+
+  <div class="page-header">
+    <h1>Settings</h1>
+    <p>Manage your account and preferences</p>
+  </div>
+
+  <div class="settings-grid">
+
+    <!-- Account -->
+    <div class="settings-card">
+      <h2>Account</h2>
+
+      <div class="setting-item">
+        <span>Profile Information</span>
+        <button (click)="editProfile()">Edit</button>
+      </div>
+
+      <div class="setting-item">
+        <span>Change Password</span>
+        <button (click)="changePassword()">Update</button>
+      </div>
+    </div>
+
+    <!-- Appearance -->
+    <div class="settings-card">
+      <h2>Appearance</h2>
+
+      <div class="setting-item">
+        <span>Dark Theme</span>
+        <label class="switch">
+          <input 
+            type="checkbox" 
+            [(ngModel)]="darkMode"
+            (change)="toggleTheme()"
+          >
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Preferences -->
+    <div class="settings-card">
+      <h2>Preferences</h2>
+
+      <div class="setting-item">
+        <span>Enable Notifications</span>
+        <label class="switch">
+          <input
+            type="checkbox"
+            [(ngModel)]="notifications"
+            (change)="onNotificationsChange()"
+          >
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="setting-item">
+        <span>Email Alerts</span>
+        <label class="switch">
+          <input
+            type="checkbox"
+            [(ngModel)]="emails"
+            (change)="onEmailsChange()"
+          >
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+
+
+    <!-- Support -->
+    <div class="settings-card">
+      <h2>Support</h2>
+
+      <div class="setting-item">
+        <span>Help Center</span>
+        <button (click)="openHelp()">Open</button>
+      </div>
+
+      <div class="setting-item">
+        <span>Contact Support</span>
+        <button (click)="contactSupport()">Contact</button>
+      </div>
+    </div>
+
+ 
+    <!-- Security -->
+    <div class="settings-card danger">
+      <h2>Security</h2>
+
+      <div class="setting-item">
+        <span>Logout</span>
+        <button class="logout-btn" (click)="logout()">Logout</button>
+      </div>
+    </div>
+
+  </div>
+
+</div>

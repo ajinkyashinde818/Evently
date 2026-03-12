@@ -1,0 +1,374 @@
+const pool = require("../config/db");
+const PDFDocument = require("pdfkit");
+const { sendCertificateEmail } = require("../utils/emailService");
+
+/* ================= CREATE EVENT ================= */
+
+exports.createEvent = async (req, res) => {
+
+  try {
+
+    console.log('Create event request body:', req.body);
+    console.log('Create event files:', req.files);
+
+    const {
+      title,
+      description,
+      venue,
+      city,
+      start_date,
+      end_date,
+      category,
+      type,
+      organizer,
+      email,
+      address,
+      maplink,
+      registration_limit,
+      registration_deadline,
+      status = 'published'  // Default to published, but allow upcoming
+    } = req.body;
+
+    console.log('Extracted status:', status);
+
+    const banner = req.files && req.files.banner && req.files.banner.length > 0 
+      ? req.files.banner[0].filename 
+      : null;
+
+    console.log('Banner filename:', banner);
+
+    const result = await pool.query(
+
+      `INSERT INTO events
+      (title, description, venue, city, start_date, end_date, category, type, organizer, email, address, maplink, registration_limit, registration_deadline, banner_image, status)
+      VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16)
+      RETURNING *`,
+
+      [
+        title,
+        description,
+        venue,
+        city,
+        start_date,
+        end_date,
+        category,
+        type,
+        organizer,
+        email,
+        address,
+        maplink,
+        registration_limit,
+        registration_deadline,
+        banner,
+        status
+      ]
+
+    );
+
+    console.log('Event created successfully:', result.rows[0]);
+
+    res.status(201).json({
+      message: status === 'upcoming' ? "Event saved as upcoming" : "Event created successfully",
+      event: result.rows[0]
+    });
+
+  } catch (error) {
+
+    console.error('Create event error:', error);
+
+    res.status(500).json({
+      error: "Event creation failed"
+    });
+
+  }
+
+};
+
+
+/* ================= GET ALL EVENTS ================= */
+
+exports.getEvents = async (req, res) => {
+
+  try {
+
+    const result = await pool.query(
+
+      `SELECT 
+        events.*,
+        COUNT(registrations.id) AS registrations_count
+       FROM events
+       LEFT JOIN registrations
+       ON events.id = registrations.event_id
+       GROUP BY events.id
+       ORDER BY events.start_date DESC`
+
+    );
+
+    // Map 'draft' status to 'upcoming' for backward compatibility
+    const events = result.rows.map(event => ({
+      ...event,
+      status: event.status === 'draft' ? 'upcoming' : event.status
+    }));
+
+    res.json(events);
+
+  } catch (error) {
+
+    console.error(error);
+
+    res.status(500).json({
+      error: "Failed to fetch events"
+    });
+
+  }
+
+};
+
+
+
+/* ================= UPCOMING EVENTS ================= */
+
+exports.getUpcomingEvents = async (req, res) => {
+
+  try {
+
+    const result = await pool.query(
+
+      `SELECT 
+        id,
+        title,
+        venue,
+        city,
+        start_date,
+        status
+       FROM events
+       WHERE (status='published' OR status='upcoming')
+       AND start_date > CURRENT_DATE
+       ORDER BY start_date ASC
+       LIMIT 5`
+
+    );
+
+    res.json(result.rows);
+
+  } catch (err) {
+
+    console.error(err);
+
+    res.status(500).json({
+      error: "Failed to fetch upcoming events"
+    });
+
+  }
+
+};
+
+
+
+/* ================= END EVENT ================= */
+
+exports.endEvent = async (req, res) => {
+
+  const { id } = req.params;
+
+  try {
+
+    // Get event details
+    const eventResult = await pool.query(
+      `SELECT * FROM events WHERE id=$1`,
+      [id]
+    );
+
+    if (eventResult.rows.length === 0) {
+      return res.status(404).json({
+        error: "Event not found"
+      });
+    }
+
+    const event = eventResult.rows[0];
+
+    // Get registered users for this event
+    const registrationsResult = await pool.query(
+      `SELECT * FROM registrations WHERE event_id=$1`,
+      [id]
+    );
+
+    const registrations = registrationsResult.rows;
+
+    // Generate and send certificates to all registered users (parallel processing)
+    const certificatePromises = registrations.map(registration => 
+      generateAndSendCertificate(event, registration)
+    );
+    
+    // Send all certificates in parallel
+    await Promise.allSettled(certificatePromises);
+
+    // Mark event as completed
+    await pool.query(
+      `UPDATE events
+       SET status='completed'
+       WHERE id=$1`,
+      [id]
+    );
+
+    res.json({
+      message: `Event marked as completed and certificates sent to ${registrations.length} registered participants`
+    });
+
+  } catch (error) {
+
+    console.error(error);
+
+    res.status(500).json({
+      error: "Failed to end event"
+    });
+
+  }
+
+};
+
+/* ================= GENERATE AND SEND CERTIFICATE ================= */
+
+async function generateAndSendCertificate(event, registration) {
+  
+  const PDFDocument = require('pdfkit');
+  
+  // Create certificate
+  const doc = new PDFDocument({
+    size: 'A4',
+    margin: 0
+  });
+
+  // Set background color
+  doc.rect(0, 0, doc.page.width, doc.page.height).fill('#f8f9fa');
+
+  // Add decorative border
+  doc.strokeColor('#2c3e50').lineWidth(3);
+  doc.rect(40, 40, doc.page.width - 80, doc.page.height - 80).stroke();
+  
+  // Inner border
+  doc.strokeColor('#3498db').lineWidth(1);
+  doc.rect(50, 50, doc.page.width - 100, doc.page.height - 100).stroke();
+
+  // Header section with background
+  doc.rect(0, doc.page.height - 150, doc.page.width, 150).fill('#34495e');
+  
+  // Title text
+  doc.fillColor('#ffffff')
+     .fontSize(36)
+     .font('Helvetica-Bold')
+     .text('CERTIFICATE', 0, doc.page.height - 120, { align: 'center' });
+  
+  doc.fillColor('#ecf0f1')
+     .fontSize(16)
+     .font('Helvetica')
+     .text('OF PARTICIPATION', 0, doc.page.height - 80, { align: 'center' });
+
+  // Main content area
+  doc.fillColor('#2c3e50')
+     .fontSize(18)
+     .font('Helvetica')
+     .text('This is to certify that', 0, doc.page.height - 250, { align: 'center' });
+  
+  // Participant name (highlighted)
+  doc.fillColor('#3498db')
+     .fontSize(32)
+     .font('Helvetica-Bold')
+     .text(registration.name, 0, doc.page.height - 290, { align: 'center' });
+  
+  // Participation text
+  doc.fillColor('#2c3e50')
+     .fontSize(18)
+     .font('Helvetica')
+     .text('has successfully participated in', 0, doc.page.height - 330, { align: 'center' });
+  
+  // Event name (decorated)
+  doc.fillColor('#e74c3c')
+     .fontSize(24)
+     .font('Helvetica-Bold')
+     .text(event.title, 0, doc.page.height - 370, { align: 'center' });
+
+  // Event details section
+  const detailsY = doc.page.height - 430;
+  
+  // Date
+  doc.fillColor('#2c3e50')
+     .fontSize(14)
+     .font('Helvetica')
+     .text(`Date: ${new Date(event.start_date).toLocaleDateString('en-US', { 
+       year: 'numeric', 
+       month: 'long', 
+       day: 'numeric' 
+     })}`, 100, detailsY);
+  
+  // Venue
+  doc.text(`Venue: ${event.venue || event.city || 'Online'}`, 100, detailsY + 25);
+  
+  // Duration
+  if (event.start_date && event.end_date) {
+    const startDate = new Date(event.start_date).toLocaleDateString('en-US', { 
+      month: 'short', 
+      day: 'numeric' 
+    });
+    const endDate = new Date(event.end_date).toLocaleDateString('en-US', { 
+      month: 'short', 
+      day: 'numeric',
+      year: 'numeric'
+    });
+    doc.text(`Duration: ${startDate} - ${endDate}`, 100, detailsY + 50);
+  }
+
+  // Add decorative elements
+  doc.strokeColor('#f39c12').lineWidth(2);
+  doc.moveTo(100, detailsY + 80).lineTo(doc.page.width - 100, detailsY + 80).stroke();
+
+  // Signature section
+  const signatureY = detailsY + 120;
+  
+  // Left signature line
+  doc.strokeColor('#2c3e50').lineWidth(1);
+  doc.moveTo(100, signatureY).lineTo(250, signatureY).stroke();
+  
+  doc.fillColor('#7f8c8d')
+     .fontSize(12)
+     .font('Helvetica')
+     .text('Event Organizer', 100, signatureY + 10);
+  
+  // Right signature line
+  doc.moveTo(doc.page.width - 250, signatureY).lineTo(doc.page.width - 100, signatureY).stroke();
+  
+  doc.text('Date of Issue', doc.page.width - 250, signatureY + 10);
+
+  // Footer
+  doc.fillColor('#95a5a6')
+     .fontSize(10)
+     .font('Helvetica')
+     .text('This certificate is generated automatically by Evently Management System', 0, 100, { align: 'center' });
+
+  // Add certificate ID
+  const certId = `CERT-${event.id}-${registration.id}-${Date.now()}`;
+  doc.text(`Certificate ID: ${certId}`, 0, 120, { align: 'center' });
+
+  // Convert PDF to buffer
+  const buffers = [];
+  doc.on('data', buffers.push.bind(buffers));
+  
+  return new Promise((resolve, reject) => {
+    doc.on('end', async () => {
+      const pdfBuffer = Buffer.concat(buffers);
+      
+      // Send email with certificate
+      try {
+        await sendCertificateEmail(registration.email, registration.name, event.title, pdfBuffer);
+        resolve();
+      } catch (error) {
+        console.error('Failed to send certificate email:', error);
+        reject(error);
+      }
+    });
+    
+    doc.end();
+  });
+}
+
+

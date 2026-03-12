@@ -1,0 +1,67 @@
+2026-03-06 16:53:16 IST LOG:  database system was shut down at 2026-03-06 16:53:14 IST
+2026-03-06 16:56:06 IST ERROR:  column "event_name" of relation "events" does not exist at character 39
+2026-03-06 16:56:06 IST STATEMENT:  
+	      INSERT INTO events 
+	      (id, event_name, event_date, event_location, event_description)
+	      VALUES ($1,$2,$3,$4,$5)
+	      RETURNING *;
+	    
+2026-03-06 16:56:18 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 16:56:24 IST ERROR:  column "event_id" of relation "events" does not exist at character 35
+2026-03-06 16:56:24 IST STATEMENT:  
+	      INSERT INTO events 
+	      (event_id, event_name, event_date, event_location, event_description)
+	      VALUES ($1,$2,$3,$4,$5)
+	      RETURNING *;
+	    
+2026-03-06 16:56:37 IST ERROR:  column "event_id" of relation "events" does not exist at character 35
+2026-03-06 16:56:37 IST STATEMENT:  
+	      INSERT INTO events 
+	      (event_id, event_name, event_date, event_location, event_description)
+	      VALUES ($1,$2,$3,$4,$5)
+	      RETURNING *;
+	    
+2026-03-06 16:56:49 IST ERROR:  column "event_id" of relation "events" does not exist at character 35
+2026-03-06 16:56:49 IST STATEMENT:  
+	      INSERT INTO events 
+	      (event_id, event_name, event_date, event_location, event_description)
+	      VALUES ($1,$2,$3,$4,$5)
+	      RETURNING *;
+	    
+2026-03-06 16:56:49 IST ERROR:  column "event_id" of relation "events" does not exist at character 35
+2026-03-06 16:56:49 IST STATEMENT:  
+	      INSERT INTO events 
+	      (event_id, event_name, event_date, event_location, event_description)
+	      VALUES ($1,$2,$3,$4,$5)
+	      RETURNING *;
+	    
+2026-03-06 16:57:25 IST ERROR:  column "event_id" of relation "events" does not exist at character 35
+2026-03-06 16:57:25 IST STATEMENT:  
+	      INSERT INTO events 
+	      (event_id, event_name, event_date, event_location, event_description)
+	      VALUES ($1,$2,$3,$4,$5)
+	      RETURNING *;
+	    
+2026-03-06 16:58:16 IST LOG:  checkpoint starting: time
+2026-03-06 16:58:19 IST LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.004 s, sync=1.016 s, total=3.055 s; sync files=2, longest=1.015 s, average=0.508 s; distance=0 kB, estimate=0 kB; lsn=0/242EE60, redo lsn=0/242EE08
+2026-03-06 16:58:20 IST FATAL:  the database system is in recovery mode
+2026-03-06 16:58:20 IST LOG:  database system was interrupted; last known up at 2026-03-06 16:58:19 IST
+2026-03-06 16:58:26 IST LOG:  database system was not properly shut down; automatic recovery in progress
+2026-03-06 16:58:26 IST LOG:  redo starts at 0/242EE08
+2026-03-06 16:58:26 IST LOG:  invalid record length at 0/242EED8: expected at least 24, got 0
+2026-03-06 16:58:26 IST LOG:  redo done at 0/242EE60 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2026-03-06 16:58:26 IST LOG:  checkpoint starting: end-of-recovery immediate wait
+2026-03-06 16:58:26 IST LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.005 s, sync=0.002 s, total=0.037 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/242EED8, redo lsn=0/242EED8
+2026-03-06 11:28:28.159 GMT [14828] FATAL:  could not reattach to shared memory (key=00000000000016E8, addr=00000280DA9B0000): error code 1455
+2026-03-06 16:58:28 IST LOG:  unrecognized win32 error code: 1455
+2026-03-06 16:58:28 IST LOG:  database system was interrupted; last known up at 2026-03-06 16:58:26 IST
+2026-03-06 16:58:28 IST LOG:  database system was not properly shut down; automatic recovery in progress
+2026-03-06 16:58:28 IST LOG:  invalid record length at 0/242EF50: expected at least 24, got 0
+2026-03-06 16:58:28 IST LOG:  redo is not required
+2026-03-06 16:58:28 IST LOG:  checkpoint starting: end-of-recovery immediate wait
+2026-03-06 16:58:28 IST LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.002 s, total=0.142 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/242EF50, redo lsn=0/242EF50
+2026-03-06 16:58:31 IST LOG:  unrecognized win32 error code: 1455
+2026-03-06 16:58:31 IST ERROR:  could not create shared memory segment "Global/PostgreSQL.2671848918": Invalid argument
+2026-03-06 16:58:32 IST LOG:  unrecognized win32 error code: 1455
+2026-03-06 16:58:32 IST ERROR:  could not create shared memory segment "Global/PostgreSQL.1803997024": Invalid argument

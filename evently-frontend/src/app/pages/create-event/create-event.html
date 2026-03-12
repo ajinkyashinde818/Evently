@@ -1,0 +1,374 @@
+<form class="create-event-page" #eventForm="ngForm">
+
+<!-- Header -->
+<div class="page-header">
+<h1>Create New Event</h1>
+<p>Fill out the details to set up your next event</p>
+</div>
+
+<div class="form-layout">
+
+<!-- LEFT COLUMN -->
+<div class="left-column">
+
+<!-- EVENT DETAILS -->
+<div class="card">
+
+<h2>📌 Event Details</h2>
+
+<label>Event Name *</label>
+<input
+type="text"
+name="title"
+required
+minlength="5"
+[(ngModel)]="eventData.title"
+#title="ngModel"
+placeholder="Enter event name"
+>
+
+<div class="error" *ngIf="title.invalid && title.touched">
+<span *ngIf="title.errors?.['required']">Event name is required</span>
+<span *ngIf="title.errors?.['minlength']">Minimum 5 characters</span>
+</div>
+
+
+<label>Description *</label>
+<textarea
+rows="4"
+name="description"
+required
+minlength="20"
+[(ngModel)]="eventData.description"
+#description="ngModel"
+placeholder="Write something about your event"
+></textarea>
+
+<div class="error" *ngIf="description.invalid && description.touched">
+<span *ngIf="description.errors?.['required']">Description required</span>
+<span *ngIf="description.errors?.['minlength']">Minimum 20 characters</span>
+</div>
+
+
+<div class="row">
+
+<div>
+<label>Category *</label>
+<select
+name="category"
+required
+[(ngModel)]="eventData.category"
+#category="ngModel"
+>
+<option value="">Select category</option>
+<option>Conference</option>
+<option>Workshop</option>
+<option>Festival</option>
+</select>
+
+<div class="error" *ngIf="category.invalid && category.touched">
+Category required
+</div>
+
+</div>
+
+<div>
+<label>Event Type *</label>
+<select
+name="type"
+required
+[(ngModel)]="eventData.type"
+#type="ngModel"
+>
+<option value="">Select type</option>
+<option>Online</option>
+<option>Offline</option>
+<option>Hybrid</option>
+</select>
+
+<div class="error" *ngIf="type.invalid && type.touched">
+Event type required
+</div>
+
+</div>
+
+</div>
+
+
+<div class="row">
+
+<div>
+<label>Organizer Name *</label>
+<input
+type="text"
+name="organizer"
+required
+[(ngModel)]="eventData.organizer"
+#organizer="ngModel"
+>
+
+<div class="error" *ngIf="organizer.invalid && organizer.touched">
+Organizer name required
+</div>
+
+</div>
+
+<div>
+
+<label>Organizer Email *</label>
+
+<input
+type="email"
+name="email"
+required
+email
+[(ngModel)]="eventData.email"
+#email="ngModel"
+>
+
+<div class="error" *ngIf="email.invalid && email.touched">
+
+<span *ngIf="email.errors?.['required']">
+Email required
+</span>
+
+<span *ngIf="email.errors?.['email']">
+Invalid email format
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- LOCATION -->
+
+<div class="card">
+
+<h2>
+  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:6px;vertical-align:middle;">
+    <path d="M12 21s-6-5.373-6-10a6 6 0 1112 0c0 4.627-6 10-6 10z"></path>
+    <circle cx="12" cy="11" r="2.5"></circle>
+  </svg>
+  Location
+</h2>
+
+<div class="row">
+
+<div>
+
+<label>Venue *</label>
+
+<input
+type="text"
+name="venue"
+required
+[(ngModel)]="eventData.venue"
+#venue="ngModel"
+>
+
+<div class="error" *ngIf="venue.invalid && venue.touched">
+Venue required
+</div>
+
+</div>
+
+<div>
+
+<label>City *</label>
+
+<input
+type="text"
+name="city"
+required
+[(ngModel)]="eventData.city"
+#city="ngModel"
+>
+
+<div class="error" *ngIf="city.invalid && city.touched">
+City required
+</div>
+
+</div>
+
+</div>
+
+
+<label>Full Address *</label>
+
+<input
+type="text"
+name="address"
+required
+[(ngModel)]="eventData.address"
+#address="ngModel"
+>
+
+<div class="error" *ngIf="address.invalid && address.touched">
+Address required
+</div>
+
+
+<label>Google Maps Link</label>
+
+<input
+type="url"
+name="mapLink"
+[(ngModel)]="eventData.mapLink"
+>
+
+</div>
+
+
+<!-- MEDIA -->
+
+<div class="card">
+
+<h2>
+  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:6px;vertical-align:middle;">
+    <rect x="3" y="5" width="18" height="14" rx="2" ry="2"></rect>
+    <path d="M9 5l2-2h2l2 2"></path>
+    <circle cx="12" cy="12" r="3"></circle>
+  </svg>
+  Media Upload
+</h2>
+
+<label>Banner Image *</label>
+
+<input
+type="file"
+required
+(change)="onFileChange($event)"
+#banner
+>
+
+<div class="error" *ngIf="bannerError">
+{{bannerError}}
+</div>
+
+<label>Gallery Images (Optional)</label>
+
+<input type="file" multiple>
+
+</div>
+
+</div>
+
+
+<!-- RIGHT COLUMN -->
+
+<div class="right-column">
+
+<div class="card">
+
+<h2>Date &amp; Time</h2>
+
+<label>Start Date *</label>
+
+<input
+type="datetime-local"
+name="startDate"
+required
+[(ngModel)]="eventData.startDate"
+#startDate="ngModel"
+>
+
+<div class="error" *ngIf="startDate.invalid && startDate.touched">
+Start date required
+</div>
+
+
+<label>End Date *</label>
+
+<input
+type="datetime-local"
+name="endDate"
+required
+[(ngModel)]="eventData.endDate"
+#endDate="ngModel"
+>
+
+<div class="error" *ngIf="endDate.invalid && endDate.touched">
+End date required
+</div>
+
+</div>
+
+
+<div class="card">
+
+<h2>🧾 Registration</h2>
+
+<label>Registration Limit *</label>
+
+<input
+type="number"
+name="limit"
+required
+min="1"
+[(ngModel)]="eventData.limit"
+#limit="ngModel"
+>
+
+<div class="error" *ngIf="limit.invalid && limit.touched">
+
+<span *ngIf="limit.errors?.['required']">
+Registration limit required
+</span>
+
+<span *ngIf="limit.errors?.['min']">
+Must be at least 1
+</span>
+
+</div>
+
+
+<label>Registration Deadline *</label>
+
+<input
+type="date"
+name="deadline"
+required
+[(ngModel)]="eventData.deadline"
+#deadline="ngModel"
+>
+
+<div class="error" *ngIf="deadline.invalid && deadline.touched">
+Deadline required
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- BUTTONS -->
+
+<div class="form-actions">
+
+<button
+type="button"
+class="upcoming-btn"
+(click)="publishEvent(eventForm,'upcoming')"
+>
+Save as Upcoming
+</button>
+
+<button
+type="button"
+class="publish-btn"
+[disabled]="eventForm.invalid"
+(click)="publishEvent(eventForm,'published')"
+>
+Publish Event
+</button>
+
+</div>
+
+</form>

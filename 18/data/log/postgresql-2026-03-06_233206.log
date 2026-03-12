@@ -1,0 +1,21 @@
+2026-03-06 23:32:07 IST LOG:  database system was shut down at 2026-03-06 23:32:05 IST
+2026-03-06 23:33:06 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 23:33:06 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 23:34:14 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 23:37:06 IST LOG:  checkpoint starting: time
+2026-03-06 23:37:06 IST LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.001 s, total=0.019 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/24634B0, redo lsn=0/2463458
+2026-03-06 23:53:22 IST ERROR:  column "checked_in" of relation "registrations" does not exist at character 26
+2026-03-06 23:53:22 IST STATEMENT:  UPDATE registrations
+	SET checked_in=true
+	WHERE ticket_id=$1
+2026-03-06 23:55:14 IST ERROR:  column "checked_in" of relation "registrations" does not exist at character 26
+2026-03-06 23:55:14 IST STATEMENT:  UPDATE registrations
+	SET checked_in=true
+	WHERE ticket_id=$1
+2026-03-06 23:58:07 IST ERROR:  column "checked_in" of relation "registrations" does not exist at character 26
+2026-03-06 23:58:07 IST STATEMENT:  UPDATE registrations
+	SET checked_in=true
+	WHERE ticket_id=$1

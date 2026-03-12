@@ -1,0 +1,832 @@
+2026-03-06 17:00:27 IST LOG:  database system was interrupted; last known up at 2026-03-06 16:58:28 IST
+2026-03-06 17:00:27 IST LOG:  database system was not properly shut down; automatic recovery in progress
+2026-03-06 17:00:27 IST LOG:  redo starts at 0/242EFC8
+2026-03-06 17:00:27 IST LOG:  invalid record length at 0/242F000: expected at least 24, got 0
+2026-03-06 17:00:27 IST LOG:  redo done at 0/242EFC8 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2026-03-06 17:00:27 IST LOG:  checkpoint starting: end-of-recovery immediate wait
+2026-03-06 17:00:27 IST LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.001 s, total=0.011 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/242F000, redo lsn=0/242F000
+2026-03-06 17:02:11 IST ERROR:  invalid input syntax for type integer: "all"
+2026-03-06 17:02:11 IST CONTEXT:  unnamed portal parameter $1 = '...'
+2026-03-06 17:02:11 IST STATEMENT:  SELECT *
+	       FROM events
+	       WHERE id=$1
+2026-03-06 17:02:20 IST ERROR:  column registrations.registration_id does not exist at character 41
+2026-03-06 17:02:20 IST STATEMENT:  SELECT 
+	        events.*,
+	        COUNT(registrations.registration_id) AS registered
+	       FROM events
+	       LEFT JOIN registrations
+	       ON events.id = registrations.event_id
+	       GROUP BY events.id
+	       ORDER BY events.created_at DESC
+2026-03-06 17:02:23 IST ERROR:  column registrations.registration_id does not exist at character 41
+2026-03-06 17:02:23 IST STATEMENT:  SELECT 
+	        events.*,
+	        COUNT(registrations.registration_id) AS registered
+	       FROM events
+	       LEFT JOIN registrations
+	       ON events.id = registrations.event_id
+	       GROUP BY events.id
+	       ORDER BY events.created_at DESC
+2026-03-06 17:02:24 IST ERROR:  column registrations.registration_id does not exist at character 41
+2026-03-06 17:02:24 IST STATEMENT:  SELECT 
+	        events.*,
+	        COUNT(registrations.registration_id) AS registered
+	       FROM events
+	       LEFT JOIN registrations
+	       ON events.id = registrations.event_id
+	       GROUP BY events.id
+	       ORDER BY events.created_at DESC
+2026-03-06 17:02:25 IST ERROR:  column registrations.registration_id does not exist at character 41
+2026-03-06 17:02:25 IST STATEMENT:  SELECT 
+	        events.*,
+	        COUNT(registrations.registration_id) AS registered
+	       FROM events
+	       LEFT JOIN registrations
+	       ON events.id = registrations.event_id
+	       GROUP BY events.id
+	       ORDER BY events.created_at DESC
+2026-03-06 17:02:26 IST ERROR:  column registrations.registration_id does not exist at character 41
+2026-03-06 17:02:26 IST STATEMENT:  SELECT 
+	        events.*,
+	        COUNT(registrations.registration_id) AS registered
+	       FROM events
+	       LEFT JOIN registrations
+	       ON events.id = registrations.event_id
+	       GROUP BY events.id
+	       ORDER BY events.created_at DESC
+2026-03-06 17:05:00 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 17:07:01 IST ERROR:  column registrations.registration_id does not exist at character 41
+2026-03-06 17:07:01 IST STATEMENT:  SELECT 
+	        events.*,
+	        COUNT(registrations.registration_id) AS registered
+	       FROM events
+	       LEFT JOIN registrations
+	       ON events.id = registrations.event_id
+	       GROUP BY events.id
+	       ORDER BY events.created_at DESC
+2026-03-06 17:07:02 IST ERROR:  column registrations.registration_id does not exist at character 41
+2026-03-06 17:07:02 IST STATEMENT:  SELECT 
+	        events.*,
+	        COUNT(registrations.registration_id) AS registered
+	       FROM events
+	       LEFT JOIN registrations
+	       ON events.id = registrations.event_id
+	       GROUP BY events.id
+	       ORDER BY events.created_at DESC
+2026-03-06 17:07:03 IST ERROR:  column registrations.registration_id does not exist at character 41
+2026-03-06 17:07:03 IST STATEMENT:  SELECT 
+	        events.*,
+	        COUNT(registrations.registration_id) AS registered
+	       FROM events
+	       LEFT JOIN registrations
+	       ON events.id = registrations.event_id
+	       GROUP BY events.id
+	       ORDER BY events.created_at DESC
+2026-03-06 17:07:05 IST ERROR:  column registrations.registration_id does not exist at character 41
+2026-03-06 17:07:05 IST STATEMENT:  SELECT 
+	        events.*,
+	        COUNT(registrations.registration_id) AS registered
+	       FROM events
+	       LEFT JOIN registrations
+	       ON events.id = registrations.event_id
+	       GROUP BY events.id
+	       ORDER BY events.created_at DESC
+2026-03-06 17:07:09 IST ERROR:  column registrations.registration_id does not exist at character 41
+2026-03-06 17:07:09 IST STATEMENT:  SELECT 
+	        events.*,
+	        COUNT(registrations.registration_id) AS registered
+	       FROM events
+	       LEFT JOIN registrations
+	       ON events.id = registrations.event_id
+	       GROUP BY events.id
+	       ORDER BY events.created_at DESC
+2026-03-06 17:07:10 IST ERROR:  column registrations.registration_id does not exist at character 41
+2026-03-06 17:07:10 IST STATEMENT:  SELECT 
+	        events.*,
+	        COUNT(registrations.registration_id) AS registered
+	       FROM events
+	       LEFT JOIN registrations
+	       ON events.id = registrations.event_id
+	       GROUP BY events.id
+	       ORDER BY events.created_at DESC
+2026-03-06 17:08:51 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 17:08:58 IST ERROR:  column "event_date" does not exist at character 210
+2026-03-06 17:08:58 IST HINT:  Perhaps you meant to reference the column "events.end_date".
+2026-03-06 17:08:58 IST STATEMENT:  SELECT 
+	        events.*,
+	        COUNT(registrations.id) AS registered
+	       FROM events
+	       LEFT JOIN registrations
+	       ON events.id = registrations.event_id
+	       GROUP BY events.id
+	       ORDER BY event_date DESC
+2026-03-06 17:08:59 IST ERROR:  column "event_date" does not exist at character 210
+2026-03-06 17:08:59 IST HINT:  Perhaps you meant to reference the column "events.end_date".
+2026-03-06 17:08:59 IST STATEMENT:  SELECT 
+	        events.*,
+	        COUNT(registrations.id) AS registered
+	       FROM events
+	       LEFT JOIN registrations
+	       ON events.id = registrations.event_id
+	       GROUP BY events.id
+	       ORDER BY event_date DESC
+2026-03-06 17:09:00 IST ERROR:  column "event_date" does not exist at character 210
+2026-03-06 17:09:00 IST HINT:  Perhaps you meant to reference the column "events.end_date".
+2026-03-06 17:09:00 IST STATEMENT:  SELECT 
+	        events.*,
+	        COUNT(registrations.id) AS registered
+	       FROM events
+	       LEFT JOIN registrations
+	       ON events.id = registrations.event_id
+	       GROUP BY events.id
+	       ORDER BY event_date DESC
+2026-03-06 17:09:01 IST ERROR:  column "event_date" does not exist at character 210
+2026-03-06 17:09:01 IST HINT:  Perhaps you meant to reference the column "events.end_date".
+2026-03-06 17:09:01 IST STATEMENT:  SELECT 
+	        events.*,
+	        COUNT(registrations.id) AS registered
+	       FROM events
+	       LEFT JOIN registrations
+	       ON events.id = registrations.event_id
+	       GROUP BY events.id
+	       ORDER BY event_date DESC
+2026-03-06 17:09:05 IST ERROR:  column "event_date" does not exist at character 210
+2026-03-06 17:09:05 IST HINT:  Perhaps you meant to reference the column "events.end_date".
+2026-03-06 17:09:05 IST STATEMENT:  SELECT 
+	        events.*,
+	        COUNT(registrations.id) AS registered
+	       FROM events
+	       LEFT JOIN registrations
+	       ON events.id = registrations.event_id
+	       GROUP BY events.id
+	       ORDER BY event_date DESC
+2026-03-06 17:10:27 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 17:10:39 IST ERROR:  invalid input syntax for type integer: "all"
+2026-03-06 17:10:39 IST CONTEXT:  unnamed portal parameter $1 = '...'
+2026-03-06 17:10:39 IST STATEMENT:  SELECT *
+	       FROM events
+	       WHERE id=$1
+2026-03-06 17:11:55 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 17:12:11 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 17:12:58 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 17:13:39 IST ERROR:  invalid input syntax for type integer: "all"
+2026-03-06 17:13:39 IST CONTEXT:  unnamed portal parameter $1 = '...'
+2026-03-06 17:13:39 IST STATEMENT:  SELECT *
+	       FROM events
+	       WHERE id=$1
+2026-03-06 17:13:47 IST ERROR:  invalid input syntax for type integer: "all"
+2026-03-06 17:13:47 IST CONTEXT:  unnamed portal parameter $1 = '...'
+2026-03-06 17:13:47 IST STATEMENT:  SELECT *
+	       FROM events
+	       WHERE id=$1
+2026-03-06 17:15:15 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 17:15:27 IST LOG:  checkpoint starting: time
+2026-03-06 17:15:28 IST LOG:  checkpoint complete: wrote 4 buffers (0.0%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.438 s, sync=0.002 s, total=0.455 s; sync files=5, longest=0.001 s, average=0.001 s; distance=7 kB, estimate=7 kB; lsn=0/2430C58, redo lsn=0/2430C00
+2026-03-06 17:15:49 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 17:17:31 IST ERROR:  column "event_name" of relation "events" does not exist at character 32
+2026-03-06 17:17:31 IST STATEMENT:  INSERT INTO events
+	       (id, event_name, event_date, event_location, event_description)
+	       VALUES ($1,$2,$3,$4,$5)
+	       RETURNING *
+2026-03-06 17:17:48 IST ERROR:  column "event_name" of relation "events" does not exist at character 32
+2026-03-06 17:17:48 IST STATEMENT:  INSERT INTO events
+	       (id, event_name, event_date, event_location, event_description)
+	       VALUES ($1,$2,$3,$4,$5)
+	       RETURNING *
+2026-03-06 17:19:11 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 17:19:21 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 17:19:36 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 17:20:27 IST LOG:  checkpoint starting: time
+2026-03-06 17:20:27 IST LOG:  checkpoint complete: wrote 3 buffers (0.0%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.332 s, sync=0.011 s, total=0.357 s; sync files=4, longest=0.009 s, average=0.003 s; distance=6 kB, estimate=6 kB; lsn=0/2432498, redo lsn=0/2432440
+2026-03-06 17:27:39 IST ERROR:  invalid input syntax for type integer: "all"
+2026-03-06 17:27:39 IST CONTEXT:  unnamed portal parameter $1 = '...'
+2026-03-06 17:27:39 IST STATEMENT:  SELECT *
+	       FROM events
+	       WHERE id=$1
+2026-03-06 17:35:00 IST ERROR:  invalid input syntax for type integer: "all"
+2026-03-06 17:35:00 IST CONTEXT:  unnamed portal parameter $1 = '...'
+2026-03-06 17:35:00 IST STATEMENT:  SELECT *
+	       FROM events
+	       WHERE id=$1
+2026-03-06 17:37:29 IST ERROR:  invalid input syntax for type integer: "all"
+2026-03-06 17:37:29 IST CONTEXT:  unnamed portal parameter $1 = '...'
+2026-03-06 17:37:29 IST STATEMENT:  SELECT *
+	       FROM events
+	       WHERE id=$1
+2026-03-06 17:37:51 IST ERROR:  invalid input syntax for type integer: "all"
+2026-03-06 17:37:51 IST CONTEXT:  unnamed portal parameter $1 = '...'
+2026-03-06 17:37:51 IST STATEMENT:  SELECT *
+	       FROM events
+	       WHERE id=$1
+2026-03-06 17:37:58 IST ERROR:  invalid input syntax for type integer: "all"
+2026-03-06 17:37:58 IST CONTEXT:  unnamed portal parameter $1 = '...'
+2026-03-06 17:37:58 IST STATEMENT:  SELECT *
+	       FROM events
+	       WHERE id=$1
+2026-03-06 17:38:31 IST ERROR:  invalid input syntax for type integer: "all"
+2026-03-06 17:38:31 IST CONTEXT:  unnamed portal parameter $1 = '...'
+2026-03-06 17:38:31 IST STATEMENT:  SELECT *
+	       FROM events
+	       WHERE id=$1
+2026-03-06 17:38:39 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 17:38:39 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 17:38:53 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 17:38:53 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 21:27:55 IST ERROR:  invalid input syntax for type integer: "all"
+2026-03-06 21:27:55 IST CONTEXT:  unnamed portal parameter $1 = '...'
+2026-03-06 21:27:55 IST STATEMENT:  SELECT *
+	       FROM events
+	       WHERE id=$1
+2026-03-06 21:28:13 IST ERROR:  invalid input syntax for type integer: "all"
+2026-03-06 21:28:13 IST CONTEXT:  unnamed portal parameter $1 = '...'
+2026-03-06 21:28:13 IST STATEMENT:  SELECT *
+	       FROM events
+	       WHERE id=$1
+2026-03-06 21:28:17 IST ERROR:  invalid input syntax for type integer: "all"
+2026-03-06 21:28:17 IST CONTEXT:  unnamed portal parameter $1 = '...'
+2026-03-06 21:28:17 IST STATEMENT:  SELECT *
+	       FROM events
+	       WHERE id=$1
+2026-03-06 21:28:19 IST ERROR:  invalid input syntax for type integer: "all"
+2026-03-06 21:28:19 IST CONTEXT:  unnamed portal parameter $1 = '...'
+2026-03-06 21:28:19 IST STATEMENT:  SELECT *
+	       FROM events
+	       WHERE id=$1
+2026-03-06 21:28:45 IST ERROR:  invalid input syntax for type integer: "all"
+2026-03-06 21:28:45 IST CONTEXT:  unnamed portal parameter $1 = '...'
+2026-03-06 21:28:45 IST STATEMENT:  SELECT *
+	       FROM events
+	       WHERE id=$1
+2026-03-06 21:40:15 IST ERROR:  invalid input syntax for type integer: "all"
+2026-03-06 21:40:15 IST CONTEXT:  unnamed portal parameter $1 = '...'
+2026-03-06 21:40:15 IST STATEMENT:  SELECT *
+	       FROM events
+	       WHERE id=$1
+2026-03-06 21:40:29 IST LOG:  checkpoint starting: time
+2026-03-06 21:40:29 IST LOG:  checkpoint complete: wrote 4 buffers (0.0%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.432 s, sync=0.003 s, total=0.455 s; sync files=5, longest=0.002 s, average=0.001 s; distance=12 kB, estimate=12 kB; lsn=0/24357E8, redo lsn=0/2435790
+2026-03-06 21:41:29 IST ERROR:  invalid input syntax for type integer: "all"
+2026-03-06 21:41:29 IST CONTEXT:  unnamed portal parameter $1 = '...'
+2026-03-06 21:41:29 IST STATEMENT:  SELECT *
+	       FROM events
+	       WHERE id=$1
+2026-03-06 21:42:59 IST ERROR:  invalid input syntax for type integer: "all"
+2026-03-06 21:42:59 IST CONTEXT:  unnamed portal parameter $1 = '...'
+2026-03-06 21:42:59 IST STATEMENT:  SELECT *
+	       FROM events
+	       WHERE id=$1
+2026-03-06 21:43:36 IST ERROR:  invalid input syntax for type integer: "all"
+2026-03-06 21:43:36 IST CONTEXT:  unnamed portal parameter $1 = '...'
+2026-03-06 21:43:36 IST STATEMENT:  SELECT *
+	       FROM events
+	       WHERE id=$1
+2026-03-06 21:45:44 IST ERROR:  invalid input syntax for type integer: "all"
+2026-03-06 21:45:44 IST CONTEXT:  unnamed portal parameter $1 = '...'
+2026-03-06 21:45:44 IST STATEMENT:  SELECT *
+	       FROM events
+	       WHERE id=$1
+2026-03-06 21:45:59 IST ERROR:  invalid input syntax for type integer: "all"
+2026-03-06 21:45:59 IST CONTEXT:  unnamed portal parameter $1 = '...'
+2026-03-06 21:45:59 IST STATEMENT:  SELECT *
+	       FROM events
+	       WHERE id=$1
+2026-03-06 21:46:39 IST ERROR:  invalid input syntax for type integer: "all"
+2026-03-06 21:46:39 IST CONTEXT:  unnamed portal parameter $1 = '...'
+2026-03-06 21:46:39 IST STATEMENT:  SELECT *
+	       FROM events
+	       WHERE id=$1
+2026-03-06 21:47:43 IST ERROR:  invalid input syntax for type integer: "all"
+2026-03-06 21:47:43 IST CONTEXT:  unnamed portal parameter $1 = '...'
+2026-03-06 21:47:43 IST STATEMENT:  SELECT *
+	       FROM events
+	       WHERE id=$1
+2026-03-06 21:48:16 IST ERROR:  invalid input syntax for type integer: "all"
+2026-03-06 21:48:16 IST CONTEXT:  unnamed portal parameter $1 = '...'
+2026-03-06 21:48:16 IST STATEMENT:  SELECT *
+	       FROM events
+	       WHERE id=$1
+2026-03-06 21:48:26 IST ERROR:  invalid input syntax for type integer: "all"
+2026-03-06 21:48:26 IST CONTEXT:  unnamed portal parameter $1 = '...'
+2026-03-06 21:48:26 IST STATEMENT:  SELECT *
+	       FROM events
+	       WHERE id=$1
+2026-03-06 21:50:46 IST ERROR:  invalid input syntax for type integer: "all"
+2026-03-06 21:50:46 IST CONTEXT:  unnamed portal parameter $1 = '...'
+2026-03-06 21:50:46 IST STATEMENT:  SELECT *
+	       FROM events
+	       WHERE id=$1
+2026-03-06 21:51:58 IST ERROR:  invalid input syntax for type integer: "all"
+2026-03-06 21:51:58 IST CONTEXT:  unnamed portal parameter $1 = '...'
+2026-03-06 21:51:58 IST STATEMENT:  SELECT *
+	       FROM events
+	       WHERE id=$1
+2026-03-06 21:51:59 IST ERROR:  invalid input syntax for type integer: "all"
+2026-03-06 21:51:59 IST CONTEXT:  unnamed portal parameter $1 = '...'
+2026-03-06 21:51:59 IST STATEMENT:  SELECT *
+	       FROM events
+	       WHERE id=$1
+2026-03-06 21:52:30 IST ERROR:  invalid input syntax for type integer: "all"
+2026-03-06 21:52:30 IST CONTEXT:  unnamed portal parameter $1 = '...'
+2026-03-06 21:52:30 IST STATEMENT:  SELECT *
+	       FROM events
+	       WHERE id=$1
+2026-03-06 21:52:31 IST ERROR:  invalid input syntax for type integer: "all"
+2026-03-06 21:52:31 IST CONTEXT:  unnamed portal parameter $1 = '...'
+2026-03-06 21:52:31 IST STATEMENT:  SELECT *
+	       FROM events
+	       WHERE id=$1
+2026-03-06 21:52:35 IST ERROR:  invalid input syntax for type integer: "all"
+2026-03-06 21:52:35 IST CONTEXT:  unnamed portal parameter $1 = '...'
+2026-03-06 21:52:35 IST STATEMENT:  SELECT *
+	       FROM events
+	       WHERE id=$1
+2026-03-06 21:55:47 IST ERROR:  invalid input syntax for type integer: "all"
+2026-03-06 21:55:47 IST CONTEXT:  unnamed portal parameter $1 = '...'
+2026-03-06 21:55:47 IST STATEMENT:  SELECT *
+	       FROM events
+	       WHERE id=$1
+2026-03-06 21:55:47 IST ERROR:  invalid input syntax for type integer: "all"
+2026-03-06 21:55:47 IST CONTEXT:  unnamed portal parameter $1 = '...'
+2026-03-06 21:55:47 IST STATEMENT:  SELECT *
+	       FROM events
+	       WHERE id=$1
+2026-03-06 22:03:18 IST ERROR:  invalid input syntax for type integer: "all"
+2026-03-06 22:03:18 IST CONTEXT:  unnamed portal parameter $1 = '...'
+2026-03-06 22:03:18 IST STATEMENT:  SELECT *
+	       FROM events
+	       WHERE id=$1
+2026-03-06 22:13:00 IST ERROR:  invalid input syntax for type integer: "all"
+2026-03-06 22:13:00 IST CONTEXT:  unnamed portal parameter $1 = '...'
+2026-03-06 22:13:00 IST STATEMENT:  SELECT *
+	       FROM events
+	       WHERE id=$1
+2026-03-06 22:14:00 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:14:25 IST ERROR:  relation "registrations" already exists
+2026-03-06 22:14:25 IST STATEMENT:  CREATE TABLE registrations (
+	
+	id SERIAL PRIMARY KEY,
+	
+	event_id UUID REFERENCES events(id),
+	
+	name TEXT,
+	email TEXT,
+	phone TEXT,
+	
+	ticket_id TEXT,
+	
+	created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+	
+	);
+2026-03-06 22:15:29 IST LOG:  checkpoint starting: time
+2026-03-06 22:15:30 IST LOG:  checkpoint complete: wrote 12 buffers (0.1%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=1.305 s, sync=0.003 s, total=1.313 s; sync files=14, longest=0.001 s, average=0.001 s; distance=62 kB, estimate=62 kB; lsn=0/24451F0, redo lsn=0/2445198
+2026-03-06 22:17:34 IST ERROR:  invalid input syntax for type integer: "all"
+2026-03-06 22:17:34 IST CONTEXT:  unnamed portal parameter $1 = '...'
+2026-03-06 22:17:34 IST STATEMENT:  SELECT *
+	       FROM events
+	       WHERE id=$1
+2026-03-06 22:17:34 IST ERROR:  invalid input syntax for type integer: "all"
+2026-03-06 22:17:34 IST CONTEXT:  unnamed portal parameter $1 = '...'
+2026-03-06 22:17:34 IST STATEMENT:  SELECT *
+	       FROM events
+	       WHERE id=$1
+2026-03-06 22:17:56 IST ERROR:  invalid input syntax for type integer: "all"
+2026-03-06 22:17:56 IST CONTEXT:  unnamed portal parameter $1 = '...'
+2026-03-06 22:17:56 IST STATEMENT:  SELECT *
+	       FROM events
+	       WHERE id=$1
+2026-03-06 22:17:56 IST ERROR:  invalid input syntax for type integer: "all"
+2026-03-06 22:17:56 IST CONTEXT:  unnamed portal parameter $1 = '...'
+2026-03-06 22:17:56 IST STATEMENT:  SELECT *
+	       FROM events
+	       WHERE id=$1
+2026-03-06 22:18:00 IST ERROR:  invalid input syntax for type integer: "all"
+2026-03-06 22:18:00 IST CONTEXT:  unnamed portal parameter $1 = '...'
+2026-03-06 22:18:00 IST STATEMENT:  SELECT *
+	       FROM events
+	       WHERE id=$1
+2026-03-06 22:18:05 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:18:05 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:20:29 IST LOG:  checkpoint starting: time
+2026-03-06 22:20:30 IST LOG:  checkpoint complete: wrote 4 buffers (0.0%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.433 s, sync=0.002 s, total=0.441 s; sync files=5, longest=0.001 s, average=0.001 s; distance=13 kB, estimate=57 kB; lsn=0/2448610, redo lsn=0/24485B8
+2026-03-06 22:22:09 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:24:21 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:24:29 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:25:29 IST LOG:  checkpoint starting: time
+2026-03-06 22:25:29 IST LOG:  checkpoint complete: wrote 1 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.112 s, sync=0.001 s, total=0.127 s; sync files=1, longest=0.001 s, average=0.001 s; distance=7 kB, estimate=52 kB; lsn=0/244A288, redo lsn=0/244A230
+2026-03-06 22:26:50 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:26:50 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:26:50 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:30:29 IST LOG:  checkpoint starting: time
+2026-03-06 22:30:29 IST LOG:  checkpoint complete: wrote 4 buffers (0.0%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.428 s, sync=0.010 s, total=0.443 s; sync files=5, longest=0.009 s, average=0.002 s; distance=13 kB, estimate=48 kB; lsn=0/244D708, redo lsn=0/244D6B0
+2026-03-06 22:31:25 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:31:35 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:31:36 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:31:38 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:31:41 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:31:43 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:31:50 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:31:51 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:31:55 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:31:57 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:32:11 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:32:13 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:34:20 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:34:27 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:34:43 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:34:54 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:34:54 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:34:54 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:35:29 IST LOG:  checkpoint starting: time
+2026-03-06 22:35:30 IST LOG:  checkpoint complete: wrote 4 buffers (0.0%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.440 s, sync=0.010 s, total=0.464 s; sync files=5, longest=0.009 s, average=0.002 s; distance=13 kB, estimate=45 kB; lsn=0/2450C78, redo lsn=0/2450C20
+2026-03-06 22:37:29 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:37:34 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:37:34 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:39:01 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:39:07 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:39:09 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:39:12 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:39:12 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:40:29 IST LOG:  checkpoint starting: time
+2026-03-06 22:40:29 IST LOG:  checkpoint complete: wrote 4 buffers (0.0%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.440 s, sync=0.011 s, total=0.465 s; sync files=5, longest=0.009 s, average=0.003 s; distance=13 kB, estimate=41 kB; lsn=0/2454370, redo lsn=0/2454318
+2026-03-06 22:40:30 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:40:31 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:40:33 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:40:35 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:40:35 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:40:43 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:40:43 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:41:03 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:41:06 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:41:07 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:41:08 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:41:20 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:41:22 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:41:32 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:41:34 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:41:41 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:41:42 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:41:43 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:41:48 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:41:48 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:43:30 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:43:59 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:44:00 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:44:06 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:44:06 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:44:18 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:44:21 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:44:23 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:44:25 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:44:26 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:44:28 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:44:29 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:44:30 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:44:32 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:44:32 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:45:10 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:45:10 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:45:29 IST LOG:  checkpoint starting: time
+2026-03-06 22:45:30 IST LOG:  checkpoint complete: wrote 4 buffers (0.0%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.435 s, sync=0.002 s, total=0.443 s; sync files=5, longest=0.001 s, average=0.001 s; distance=15 kB, estimate=39 kB; lsn=0/2458080, redo lsn=0/2458028
+2026-03-06 22:47:38 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:47:39 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:47:41 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:47:42 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:47:43 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:47:44 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:47:46 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:48:13 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:48:13 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:49:09 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:49:16 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:49:31 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:49:31 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:50:08 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:50:10 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:50:29 IST LOG:  checkpoint starting: time
+2026-03-06 22:50:29 IST LOG:  checkpoint complete: wrote 4 buffers (0.0%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.432 s, sync=0.002 s, total=0.440 s; sync files=5, longest=0.001 s, average=0.001 s; distance=10 kB, estimate=36 kB; lsn=0/245A8C8, redo lsn=0/245A870
+2026-03-06 22:50:59 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:50:59 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:54:02 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:54:09 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:54:09 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:54:59 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:55:29 IST LOG:  checkpoint starting: time
+2026-03-06 22:55:30 IST LOG:  checkpoint complete: wrote 4 buffers (0.0%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.430 s, sync=0.003 s, total=0.439 s; sync files=5, longest=0.002 s, average=0.001 s; distance=10 kB, estimate=33 kB; lsn=0/245D288, redo lsn=0/245D230
+2026-03-06 22:55:36 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 22:55:36 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 23:00:29 IST LOG:  checkpoint starting: time
+2026-03-06 23:00:29 IST LOG:  checkpoint complete: wrote 1 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.105 s, sync=0.001 s, total=0.113 s; sync files=1, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=30 kB; lsn=0/245D518, redo lsn=0/245D4C0
+2026-03-06 17:30:33.215 GMT [34308] FATAL:  could not reattach to shared memory (key=0000000000000218, addr=000001E9B36C0000): error code 1455
+2026-03-06 23:00:41 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 23:00:46 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 23:02:00 IST WARNING:  autovacuum worker took too long to start; canceled
+2026-03-06 23:04:37 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 23:04:37 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 23:05:29 IST LOG:  checkpoint starting: time
+2026-03-06 23:05:29 IST LOG:  checkpoint complete: wrote 4 buffers (0.0%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.429 s, sync=0.003 s, total=0.437 s; sync files=5, longest=0.001 s, average=0.001 s; distance=10 kB, estimate=28 kB; lsn=0/245FE70, redo lsn=0/245FDE0
+TopMemoryContext: 132224 total in 6 blocks; 38296 free (16 chunks); 93928 used
+  Map from relid to OID of cached composite type: 8192 total in 1 blocks; 2544 free (0 chunks); 5648 used
+  Type information cache: 24624 total in 2 blocks; 2672 free (0 chunks); 21952 used
+  TableSpace cache: 8192 total in 1 blocks; 2152 free (0 chunks); 6040 used
+  Operator lookup cache: 24576 total in 2 blocks; 10816 free (4 chunks); 13760 used
+  Record information cache: 8192 total in 1 blocks; 1640 free (0 chunks); 6552 used
+  search_path processing cache: 8192 total in 1 blocks; 5656 free (8 chunks); 2536 used
+  RowDescriptionContext: 8192 total in 1 blocks; 6920 free (0 chunks); 1272 used
+  MessageContext: 4194304 total in 10 blocks; 48 free (0 chunks); 4194256 used
+  Operator class cache: 8192 total in 1 blocks; 616 free (0 chunks); 7576 used
+  smgr relation table: 32768 total in 3 blocks; 16904 free (9 chunks); 15864 used
+  PgStat Shared Ref Hash: 9264 total in 2 blocks; 712 free (0 chunks); 8552 used
+  PgStat Shared Ref: 8192 total in 4 blocks; 3584 free (5 chunks); 4608 used
+  PgStat Pending: 16384 total in 5 blocks; 15984 free (63 chunks); 400 used
+  TopTransactionContext: 8192 total in 1 blocks; 7776 free (0 chunks); 416 used
+  TransactionAbortContext: 32768 total in 1 blocks; 32528 free (0 chunks); 240 used
+  Portal hash: 8192 total in 1 blocks; 616 free (0 chunks); 7576 used
+  TopPortalContext: 8192 total in 1 blocks; 7952 free (1 chunks); 240 used
+  Relcache by OID: 16384 total in 2 blocks; 3608 free (3 chunks); 12776 used
+  CacheMemoryContext: 1048576 total in 8 blocks; 425584 free (1 chunks); 622992 used
+    relation rules: 24576 total in 6 blocks; 6048 free (3 chunks); 18528 used: pg_stat_database
+    relation rules: 32768 total in 7 blocks; 2216 free (1 chunks); 30552 used: pg_stat_activity
+    index info: 2048 total in 2 blocks; 752 free (2 chunks); 1296 used: pg_auth_members_oid_index
+    index info: 2048 total in 2 blocks; 752 free (2 chunks); 1296 used: pg_auth_members_grantor_index
+    index info: 3072 total in 2 blocks; 1016 free (1 chunks); 2056 used: pg_constraint_conrelid_contypid_conname_index
+    index info: 3072 total in 2 blocks; 1152 free (2 chunks); 1920 used: pg_toast_2618_index
+    relation rules: 16384 total in 5 blocks; 6912 free (1 chunks); 9472 used: pg_roles
+    relation rules: 8192 total in 4 blocks; 3328 free (1 chunks); 4864 used: pg_stat_gssapi
+    index info: 2048 total in 2 blocks; 752 free (2 chunks); 1296 used: pg_statistic_ext_relid_index
+    index info: 2048 total in 2 blocks; 680 free (2 chunks); 1368 used: pg_index_indrelid_index
+    index info: 3072 total in 2 blocks; 1120 free (1 chunks); 1952 used: pg_db_role_setting_databaseid_rol_index
+    index info: 3072 total in 2 blocks; 1048 free (1 chunks); 2024 used: pg_opclass_am_name_nsp_index
+    index info: 2048 total in 2 blocks; 792 free (3 chunks); 1256 used: pg_foreign_data_wrapper_name_index
+    index info: 2048 total in 2 blocks; 824 free (3 chunks); 1224 used: pg_enum_oid_index
+    index info: 3072 total in 2 blocks; 1080 free (3 chunks); 1992 used: pg_class_relname_nsp_index
+    index info: 2048 total in 2 blocks; 824 free (3 chunks); 1224 used: pg_foreign_server_oid_index
+    index info: 2048 total in 2 blocks; 824 free (3 chunks); 1224 used: pg_publication_pubname_index
+    index info: 3072 total in 2 blocks; 872 free (2 chunks); 2200 used: pg_statistic_relid_att_inh_index
+    index info: 3072 total in 2 blocks; 1080 free (3 chunks); 1992 used: pg_cast_source_target_index
+    index info: 2048 total in 2 blocks; 824 free (3 chunks); 1224 used: pg_language_name_index
+    index info: 2048 total in 2 blocks; 824 free (3 chunks); 1224 used: pg_transform_oid_index
+    index info: 2048 total in 2 blocks; 824 free (3 chunks); 1224 used: pg_collation_oid_index
+    index info: 3248 total in 3 blocks; 840 free (0 chunks); 2408 used: pg_amop_fam_strat_index
+    index info: 2048 total in 2 blocks; 680 free (2 chunks); 1368 used: pg_index_indexrelid_index
+    index info: 3072 total in 2 blocks; 1296 free (3 chunks); 1776 used: pg_ts_template_tmplname_index
+    index info: 3072 total in 2 blocks; 1192 free (2 chunks); 1880 used: pg_ts_config_map_index
+    index info: 2048 total in 2 blocks; 680 free (2 chunks); 1368 used: pg_opclass_oid_index
+    index info: 2048 total in 2 blocks; 792 free (3 chunks); 1256 used: pg_foreign_data_wrapper_oid_index
+    index info: 2048 total in 2 blocks; 792 free (3 chunks); 1256 used: pg_publication_namespace_oid_index
+    index info: 2048 total in 2 blocks; 824 free (3 chunks); 1224 used: pg_event_trigger_evtname_index
+    index info: 3072 total in 2 blocks; 1296 free (3 chunks); 1776 used: pg_statistic_ext_name_index
+    index info: 2048 total in 2 blocks; 824 free (3 chunks); 1224 used: pg_publication_oid_index
+    index info: 2048 total in 2 blocks; 824 free (3 chunks); 1224 used: pg_ts_dict_oid_index
+    index info: 2048 total in 2 blocks; 824 free (3 chunks); 1224 used: pg_event_trigger_oid_index
+    index info: 2224 total in 2 blocks; 216 free (0 chunks); 2008 used: pg_conversion_default_index
+    index info: 3248 total in 3 blocks; 912 free (0 chunks); 2336 used: pg_operator_oprname_l_r_n_index
+    index info: 3072 total in 2 blocks; 1296 free (3 chunks); 1776 used: pg_trigger_tgrelid_tgname_index
+    index info: 2048 total in 2 blocks; 824 free (3 chunks); 1224 used: pg_extension_oid_index
+    index info: 3072 total in 2 blocks; 1296 free (3 chunks); 1776 used: pg_enum_typid_label_index
+    index info: 2048 total in 2 blocks; 824 free (3 chunks); 1224 used: pg_ts_config_oid_index
+    index info: 2048 total in 2 blocks; 824 free (3 chunks); 1224 used: pg_user_mapping_oid_index
+    index info: 3072 total in 2 blocks; 1192 free (2 chunks); 1880 used: pg_opfamily_am_name_nsp_index
+    index info: 2048 total in 2 blocks; 824 free (3 chunks); 1224 used: pg_foreign_table_relid_index
+    index info: 2048 total in 2 blocks; 680 free (2 chunks); 1368 used: pg_type_oid_index
+    index info: 2048 total in 2 blocks; 680 free (2 chunks); 1368 used: pg_aggregate_fnoid_index
+    index info: 2048 total in 2 blocks; 824 free (3 chunks); 1224 used: pg_constraint_oid_index
+    index info: 3072 total in 2 blocks; 1152 free (3 chunks); 1920 used: pg_rewrite_rel_rulename_index
+    index info: 3072 total in 2 blocks; 1296 free (3 chunks); 1776 used: pg_ts_parser_prsname_index
+    index info: 3072 total in 2 blocks; 1296 free (3 chunks); 1776 used: pg_ts_config_cfgname_index
+    index info: 2048 total in 2 blocks; 824 free (3 chunks); 1224 used: pg_ts_parser_oid_index
+    index info: 3072 total in 2 blocks; 1264 free (2 chunks); 1808 used: pg_publication_rel_prrelid_prpubid_index
+    index info: 2048 total in 2 blocks; 680 free (2 chunks); 1368 used: pg_operator_oid_index
+    index info: 2048 total in 2 blocks; 680 free (2 chunks); 1368 used: pg_namespace_nspname_index
+    index info: 2048 total in 2 blocks; 824 free (3 chunks); 1224 used: pg_ts_template_oid_index
+    index info: 3072 total in 2 blocks; 904 free (1 chunks); 2168 used: pg_amop_opr_fam_index
+    index info: 3072 total in 2 blocks; 1160 free (2 chunks); 1912 used: pg_default_acl_role_nsp_obj_index
+    index info: 3072 total in 2 blocks; 1192 free (2 chunks); 1880 used: pg_collation_name_enc_nsp_index
+    index info: 2048 total in 2 blocks; 824 free (3 chunks); 1224 used: pg_publication_rel_oid_index
+    index info: 2048 total in 2 blocks; 824 free (3 chunks); 1224 used: pg_range_rngtypid_index
+    index info: 3072 total in 2 blocks; 1296 free (3 chunks); 1776 used: pg_ts_dict_dictname_index
+    index info: 3072 total in 2 blocks; 1296 free (3 chunks); 1776 used: pg_type_typname_nsp_index
+    index info: 2048 total in 2 blocks; 680 free (2 chunks); 1368 used: pg_opfamily_oid_index
+    index info: 2048 total in 2 blocks; 824 free (3 chunks); 1224 used: pg_statistic_ext_oid_index
+    index info: 3072 total in 2 blocks; 1264 free (2 chunks); 1808 used: pg_statistic_ext_data_stxoid_inh_index
+    index info: 2048 total in 2 blocks; 680 free (2 chunks); 1368 used: pg_class_oid_index
+    index info: 3072 total in 2 blocks; 1048 free (1 chunks); 2024 used: pg_proc_proname_args_nsp_index
+    index info: 2048 total in 2 blocks; 792 free (3 chunks); 1256 used: pg_partitioned_table_partrelid_index
+    index info: 2048 total in 2 blocks; 824 free (3 chunks); 1224 used: pg_range_rngmultitypid_index
+    index info: 3072 total in 2 blocks; 1296 free (3 chunks); 1776 used: pg_transform_type_lang_index
+    index info: 3072 total in 2 blocks; 1080 free (3 chunks); 1992 used: pg_attribute_relid_attnum_index
+    index info: 2048 total in 2 blocks; 680 free (2 chunks); 1368 used: pg_proc_oid_index
+    index info: 2048 total in 2 blocks; 824 free (3 chunks); 1224 used: pg_language_oid_index
+    index info: 2048 total in 2 blocks; 824 free (3 chunks); 1224 used: pg_namespace_oid_index
+    index info: 3248 total in 3 blocks; 840 free (0 chunks); 2408 used: pg_amproc_fam_proc_index
+    index info: 2048 total in 2 blocks; 824 free (3 chunks); 1224 used: pg_foreign_server_name_index
+    index info: 3072 total in 2 blocks; 1296 free (3 chunks); 1776 used: pg_attribute_relid_attnam_index
+    index info: 3072 total in 2 blocks; 1264 free (2 chunks); 1808 used: pg_publication_namespace_pnnspid_pnpubid_index
+    index info: 2048 total in 2 blocks; 824 free (3 chunks); 1224 used: pg_conversion_oid_index
+    index info: 3072 total in 2 blocks; 1264 free (2 chunks); 1808 used: pg_user_mapping_user_server_index
+    index info: 3072 total in 2 blocks; 1264 free (2 chunks); 1808 used: pg_subscription_rel_srrelid_srsubid_index
+    index info: 2048 total in 2 blocks; 824 free (3 chunks); 1224 used: pg_sequence_seqrelid_index
+    index info: 2048 total in 2 blocks; 824 free (3 chunks); 1224 used: pg_extension_name_index
+    index info: 3072 total in 2 blocks; 1296 free (3 chunks); 1776 used: pg_conversion_name_nsp_index
+    index info: 2048 total in 2 blocks; 680 free (2 chunks); 1368 used: pg_authid_oid_index
+    index info: 3072 total in 2 blocks; 1088 free (2 chunks); 1984 used: pg_auth_members_member_role_index
+    index info: 2048 total in 2 blocks; 824 free (3 chunks); 1224 used: pg_subscription_oid_index
+    index info: 2048 total in 2 blocks; 824 free (3 chunks); 1224 used: pg_parameter_acl_oid_index
+    index info: 2048 total in 2 blocks; 680 free (2 chunks); 1368 used: pg_tablespace_oid_index
+    index info: 2048 total in 2 blocks; 824 free (3 chunks); 1224 used: pg_parameter_acl_parname_index
+    index info: 3072 total in 2 blocks; 1192 free (2 chunks); 1880 used: pg_shseclabel_object_index
+    index info: 2048 total in 2 blocks; 792 free (3 chunks); 1256 used: pg_replication_origin_roname_index
+    index info: 2048 total in 2 blocks; 680 free (2 chunks); 1368 used: pg_database_datname_index
+    index info: 3072 total in 2 blocks; 1296 free (3 chunks); 1776 used: pg_subscription_subname_index
+    index info: 2048 total in 2 blocks; 792 free (3 chunks); 1256 used: pg_replication_origin_roiident_index
+    index info: 3072 total in 2 blocks; 1016 free (2 chunks); 2056 used: pg_auth_members_role_member_index
+    index info: 2048 total in 2 blocks; 680 free (2 chunks); 1368 used: pg_database_oid_index
+    index info: 2048 total in 2 blocks; 680 free (2 chunks); 1368 used: pg_authid_rolname_index
+  LOCALLOCK hash: 8192 total in 1 blocks; 616 free (0 chunks); 7576 used
+  WAL record construction: 50200 total in 2 blocks; 6400 free (0 chunks); 43800 used
+  PrivateRefCount: 8192 total in 1 blocks; 2672 free (0 chunks); 5520 used
+  MdSmgr: 8192 total in 1 blocks; 7712 free (0 chunks); 480 used
+  GUCMemoryContext: 24576 total in 2 blocks; 12080 free (7 chunks); 12496 used
+    GUC hash table: 32768 total in 3 blocks; 11696 free (6 chunks); 21072 used
+  Timezones: 104112 total in 2 blocks; 2672 free (0 chunks); 101440 used
+  ErrorContext: 8192 total in 1 blocks; 7952 free (0 chunks); 240 used
+Grand total: 6170216 bytes in 278 blocks; 743104 free (354 chunks); 5427112 used
+2026-03-06 23:09:09 IST ERROR:  out of memory
+2026-03-06 23:09:09 IST DETAIL:  Failed on request of size 9 in memory context "MessageContext".
+2026-03-06 23:09:09 IST STATEMENT:  /*pga4dash*/
+	SELECT 'session_stats' AS chart_name, pg_catalog.row_to_json(t) AS chart_data
+	FROM (SELECT
+	   (SELECT count(*) FROM pg_catalog.pg_stat_activity WHERE datname = (SELECT datname FROM pg_catalog.pg_database WHERE oid = 24580)) AS "Total",
+	   (SELECT count(*) FROM pg_catalog.pg_stat_activity WHERE state = 'active' AND datname = (SELECT datname FROM pg_catalog.pg_database WHERE oid = 24580))  AS "Active",
+	   (SELECT count(*) FROM pg_catalog.pg_stat_activity WHERE state = 'idle' AND datname = (SELECT datname FROM pg_catalog.pg_database WHERE oid = 24580))  AS "Idle"
+	) t
+	UNION ALL
+	SELECT 'tps_stats' AS chart_name, pg_catalog.row_to_json(t) AS chart_data
+	FROM (SELECT
+	   (SELECT sum(xact_commit) + sum(xact_rollback) FROM pg_catalog.pg_stat_database WHERE datname = (SELECT datname FROM pg_catalog.pg_database WHERE oid = 24580)) AS "Transactions",
+	   (SELECT sum(xact_commit) FROM pg_catalog.pg_stat_database WHERE datname = (SELECT datname FROM pg_catalog.pg_database WHERE oid = 24580)) AS "Commits",
+	   (SELECT sum(xact_rollback) FROM pg_catalog.pg_stat_database WHERE datname = (SELECT datname FROM pg_catalog.pg_database WHERE oid = 24580)) AS "Rollbacks"
+	) t
+	UNION ALL
+	SELECT 'ti_stats' AS chart_name, pg_catalog.row_to_json(t) AS chart_data
+	FROM (SELECT
+	   (SELECT sum(tup_inserted) FROM pg_catalog.pg_stat_database WHERE datname = (SELECT datname FROM pg_catalog.pg_database WHERE oid = 24580)) AS "Inserts",
+	   (SELECT sum(tup_updated) FROM pg_catalog.pg_stat_database WHERE datname = (SELECT datname FROM pg_catalog.pg_database WHERE oid = 24580)) AS "Updates",
+	   (SELECT sum(tup_deleted) FROM pg_catalog.pg_stat_database WHERE datname = (SELECT datname FROM pg_catalog.pg_database WHERE oid = 24580)) AS "Deletes"
+	) t
+	UNION ALL
+	SELECT 'to_stats' AS chart_name, pg_catalog.row_to_json(t) AS chart_data
+	FROM (SELECT
+	   (SELECT sum(tup_fetched) FROM pg_catalog.pg_stat_database WHERE datname = (SELECT datname FROM pg_catalog.pg_database WHERE oid = 24580)) AS "Fetched",
+	   (SELECT sum(tup_returned) FROM pg_catalog.pg_stat_database WHERE datname = (SELECT datname FROM pg_catalog.pg_database WHERE oid = 24580)) AS "Returned"
+	) t
+	UNION ALL
+	SELECT 'bio_stats' AS chart_name, pg_catalog.row_to_json(t) AS chart_data
+	FROM (SELECT
+	   (SELECT sum(blks_read) FROM pg_catalog.pg_stat_database WHERE datname = (SELECT datname FROM pg_catalog.pg_database WHERE oid = 24580)) AS "Reads",
+	   (SELECT sum(blks_hit) FROM pg_catalog.pg_stat_database WHERE datname = (SELECT datname FROM pg_catalog.pg_database WHERE oid = 24580)) AS "Hits"
+	) t
+	
+2026-03-06 23:09:15 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 23:09:15 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 23:10:29 IST LOG:  checkpoint starting: time
+2026-03-06 23:10:29 IST LOG:  checkpoint complete: wrote 1 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.104 s, sync=0.001 s, total=0.112 s; sync files=1, longest=0.001 s, average=0.001 s; distance=4 kB, estimate=25 kB; lsn=0/2460EE8, redo lsn=0/2460E90
+2026-03-06 23:14:52 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 23:15:29 IST LOG:  checkpoint starting: time
+2026-03-06 23:15:30 IST LOG:  checkpoint complete: wrote 4 buffers (0.0%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.437 s, sync=0.003 s, total=0.445 s; sync files=5, longest=0.002 s, average=0.001 s; distance=7 kB, estimate=24 kB; lsn=0/2462D00, redo lsn=0/2462C70
+2026-03-06 23:18:27 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 23:20:29 IST LOG:  checkpoint starting: time
+2026-03-06 23:20:29 IST LOG:  checkpoint complete: wrote 1 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.115 s, sync=0.001 s, total=0.129 s; sync files=1, longest=0.001 s, average=0.001 s; distance=1 kB, estimate=21 kB; lsn=0/24632F8, redo lsn=0/24632A0
+2026-03-06 23:21:40 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 23:28:31 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 23:28:31 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 23:28:31 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 23:29:12 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 23:30:15 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-06 23:32:05 IST FATAL:  terminating connection due to administrator command
+2026-03-06 23:32:05 IST LOG:  shutting down
+2026-03-06 23:32:05 IST LOG:  checkpoint starting: shutdown immediate
+2026-03-06 23:32:05 IST LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.040 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=19 kB; lsn=0/24633A8, redo lsn=0/24633A8

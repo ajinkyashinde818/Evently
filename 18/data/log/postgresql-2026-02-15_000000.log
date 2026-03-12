@@ -1,0 +1,22 @@
+2026-02-15 00:00:25 IST LOG:  checkpoint starting: time
+2026-02-15 00:00:25 IST LOG:  checkpoint complete: wrote 4 buffers (0.0%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.434 s, sync=0.002 s, total=0.442 s; sync files=5, longest=0.002 s, average=0.001 s; distance=1 kB, estimate=1656 kB; lsn=0/1D5B288, redo lsn=0/1D5B230
+2026-02-15 00:15:31 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-02-15 00:42:09 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-02-15 01:00:49 IST LOG:  database system was interrupted; last known up at 2026-02-15 00:00:25 IST
+2026-02-15 01:00:55 IST LOG:  database system was not properly shut down; automatic recovery in progress
+2026-02-15 01:00:55 IST LOG:  redo starts at 0/1D5B230
+2026-02-15 01:00:55 IST LOG:  invalid record length at 0/1D5B338: expected at least 24, got 0
+2026-02-15 01:00:55 IST LOG:  redo done at 0/1D5B300 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2026-02-15 01:00:55 IST LOG:  checkpoint starting: end-of-recovery immediate wait
+2026-02-15 01:00:55 IST LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.004 s, sync=0.002 s, total=0.047 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/1D5B338, redo lsn=0/1D5B338
+2026-02-15 03:07:36 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-02-15 03:07:36 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-02-15 03:07:36 IST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-02-15 03:08:17 IST LOG:  shutting down
+2026-02-15 03:08:17 IST LOG:  checkpoint starting: shutdown immediate
+2026-02-15 03:08:17 IST LOG:  checkpoint complete: wrote 2 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.007 s, sync=0.002 s, total=0.063 s; sync files=1, longest=0.002 s, average=0.002 s; distance=14 kB, estimate=14 kB; lsn=0/1D5ED38, redo lsn=0/1D5ED38

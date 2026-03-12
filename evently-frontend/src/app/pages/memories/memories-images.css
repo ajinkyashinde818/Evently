@@ -1,0 +1,75 @@
+.images-page{
+padding:30px;
+}
+
+/* Loading and Error States */
+.loading-state {
+    text-align: center;
+    padding: 40px;
+    font-size: 18px;
+    color: #666;
+}
+
+.no-images {
+    text-align: center;
+    padding: 40px;
+    font-size: 16px;
+    color: #999;
+}
+
+.gallery-grid{
+margin-top:30px;
+display:grid;
+grid-template-columns:repeat(auto-fill,minmax(250px,1fr));
+gap:20px;
+}
+
+.image-card{
+cursor:pointer;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,0.15);
+transition:transform 0.3s;
+}
+
+.image-card:hover{
+transform:scale(1.05);
+}
+
+.image-card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+
+/* 🔹 FULLSCREEN PREVIEW */
+
+.preview-overlay{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.9);
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:1000;
+}
+
+.preview-image{
+max-width:90%;
+max-height:90%;
+border-radius:10px;
+box-shadow:0 10px 40px rgba(0,0,0,0.5);
+}
+
+.close-btn{
+position:absolute;
+top:30px;
+right:40px;
+font-size:30px;
+color:white;
+cursor:pointer;
+}
