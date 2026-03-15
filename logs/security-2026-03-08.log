@@ -1,0 +1,90 @@
+{
+  service: 'evently-backend',
+  environment: 'development',
+  version: '1.0.0',
+  event: 'WebSocket server initialized',
+  timestamp: '2026-03-08 01:41:11',
+  cors: {
+    origin: [ 'http://localhost:4200' ],
+    credentials: true,
+    optionsSuccessStatus: 200
+  },
+  transports: [ 'websocket', 'polling' ],
+  level: 'warn',
+  message: 'Security Event'
+}
+{
+  service: 'evently-backend',
+  environment: 'development',
+  version: '1.0.0',
+  event: 'WebSocket server initialized',
+  timestamp: '2026-03-08 01:43:25',
+  cors: {
+    origin: [ 'http://localhost:4200' ],
+    credentials: true,
+    optionsSuccessStatus: 200
+  },
+  transports: [ 'websocket', 'polling' ],
+  level: 'warn',
+  message: 'Security Event'
+}
+{
+  service: 'evently-backend',
+  environment: 'development',
+  version: '1.0.0',
+  event: 'WebSocket server initialized',
+  timestamp: '2026-03-08 01:44:25',
+  cors: {
+    origin: [ 'http://localhost:4200' ],
+    credentials: true,
+    optionsSuccessStatus: 200
+  },
+  transports: [ 'websocket', 'polling' ],
+  level: 'warn',
+  message: 'Security Event'
+}
+{
+  service: 'evently-backend',
+  environment: 'development',
+  version: '1.0.0',
+  event: 'WebSocket server initialized',
+  timestamp: '2026-03-08 01:49:27',
+  cors: {
+    origin: [ 'http://localhost:4200' ],
+    credentials: true,
+    optionsSuccessStatus: 200
+  },
+  transports: [ 'websocket', 'polling' ],
+  level: 'warn',
+  message: 'Security Event'
+}
+{
+  service: 'evently-backend',
+  environment: 'development',
+  version: '1.0.0',
+  event: 'WebSocket server initialized',
+  timestamp: '2026-03-08 01:52:25',
+  cors: {
+    origin: [ 'http://localhost:4200' ],
+    credentials: true,
+    optionsSuccessStatus: 200
+  },
+  transports: [ 'websocket', 'polling' ],
+  level: 'warn',
+  message: 'Security Event'
+}
+{
+  service: 'evently-backend',
+  environment: 'development',
+  version: '1.0.0',
+  event: 'WebSocket server initialized',
+  timestamp: '2026-03-08 01:53:03',
+  cors: {
+    origin: [ 'http://localhost:4200' ],
+    credentials: true,
+    optionsSuccessStatus: 200
+  },
+  transports: [ 'websocket', 'polling' ],
+  level: 'warn',
+  message: 'Security Event'
+}
